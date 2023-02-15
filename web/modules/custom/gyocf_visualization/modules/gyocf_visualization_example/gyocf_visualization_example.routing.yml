@@ -1,0 +1,7 @@
+gyocf_visualization_example.highchart:
+  path: "/highchart-example"
+  defaults:
+    _title: "Acro Media Inc - Highcharts data visualization"
+    _controller: '\Drupal\gyocf_visualization_example\Controller\HighChartController::build'
+  requirements:
+    _permission: "access content"

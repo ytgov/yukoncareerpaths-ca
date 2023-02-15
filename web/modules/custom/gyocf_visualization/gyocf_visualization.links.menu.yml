@@ -1,0 +1,99 @@
+gyocf_visualization.gyocf_settings:
+  title: GYOCF Settings
+  description: Government of Yukon api credential settings.
+  parent: system.admin_config_system
+  route_name: gyocf_visualization.gyocf_settings
+  weight: 10
+gyocf_visualization.gyocf_type_collectinon:
+  title: GYOCF API Content
+  description: GYOCF Types collection.
+  parent: system.admin_structure
+  route_name: gyocf_visualization.gyocf_type_collectinon
+  weight: 10
+entity.gyocf_lead.settings:
+  title: "Lead"
+  description: "Configure a Lead entity type."
+  route_name: entity.gyocf_lead.settings
+  parent: gyocf_visualization.gyocf_type_collectinon
+entity.gyocf_lead.collection:
+  title: "Leads"
+  description: "List of leads."
+  route_name: entity.gyocf_lead.collection
+  parent: system.admin_content
+
+entity.gyocf_goal.settings:
+  title: "Goal"
+  description: "Configure a Goal entity type."
+  route_name: entity.gyocf_goal.settings
+  parent: gyocf_visualization.gyocf_type_collectinon
+entity.gyocf_goal.collection:
+  title: "Goals"
+  description: "List of goals."
+  route_name: entity.gyocf_goal.collection
+  parent: system.admin_content
+
+entity.gyocf_objective.settings:
+  title: "Objective"
+  description: "Configure an Objective entity type."
+  route_name: entity.gyocf_objective.settings
+  parent: gyocf_visualization.gyocf_type_collectinon
+entity.gyocf_objective.collection:
+  title: "Objectives"
+  description: "List of objectives."
+  route_name: entity.gyocf_objective.collection
+  parent: system.admin_content
+
+entity.gyocf_area.settings:
+  title: "Area"
+  description: "Configure an Area entity type."
+  route_name: entity.gyocf_area.settings
+  parent: gyocf_visualization.gyocf_type_collectinon
+entity.gyocf_area.collection:
+  title: "Areas"
+  description: "List of areas."
+  route_name: entity.gyocf_area.collection
+  parent: system.admin_content
+
+entity.gyocf_action.settings:
+  title: "Action"
+  description: "Configure an Action entity type."
+  route_name: entity.gyocf_action.settings
+  parent: gyocf_visualization.gyocf_type_collectinon
+entity.gyocf_action.collection:
+  title: "Actions"
+  description: "List of actions."
+  route_name: entity.gyocf_action.collection
+  parent: system.admin_content
+
+entity.gyocf_indicator.settings:
+  title: "Indicator"
+  description: "Configure an Indicator entity type."
+  route_name: entity.gyocf_indicator.settings
+  parent: gyocf_visualization.gyocf_type_collectinon
+entity.gyocf_indicator.collection:
+  title: "Indicators"
+  description: "List of indicators."
+  route_name: entity.gyocf_indicator.collection
+  parent: system.admin_content
+
+entity.gyocf_indicator_entry.settings:
+  title: "Indicator Entry"
+  description: "Configure an Indicator Entry entity type."
+  route_name: entity.gyocf_indicator_entry.settings
+  parent: gyocf_visualization.gyocf_type_collectinon
+entity.gyocf_indicator_entry.collection:
+  title: "Indicator Entries"
+  description: "List of indicator entries."
+  route_name: entity.gyocf_indicator_entry.collection
+  parent: system.admin_content
+
+entity.gyocf_directors_committee.settings:
+  title: "Directors Committee"
+  description: "Configure a Directors Committee entity type."
+  route_name: entity.gyocf_directors_committee.settings
+  parent: gyocf_visualization.gyocf_type_collectinon
+entity.gyocf_directors_committee.collection:
+  title: "Directors Committees"
+  description: "List of directors committees."
+  route_name: entity.gyocf_directors_committee.collection
+  parent: system.admin_content

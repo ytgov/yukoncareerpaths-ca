@@ -1,0 +1,12 @@
+gyocf_visualization.gyocf_data_type.*:
+  type: config_entity
+  label: 'GYOCF Data type config'
+  mapping:
+    id:
+      type: string
+      label: 'ID'
+    label:
+      type: label
+      label: 'Label'
+    uuid:
+      type: string

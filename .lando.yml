@@ -1,0 +1,32 @@
+name: government-of-yukon-recruitment-marketing-drupal
+recipe: lagoon
+config:
+  flavor: drupal
+  build: {}
+services:
+  acro:
+    type: compose
+    services:
+      image: acromedia/php-burrito:php8.1
+      command: /opt/bin/entry_point.sh
+    overrides:
+      environment:
+        DRUPAL_TEST_BASE_URL: http://government-of-yukon-recruitment-marketing-drupal.lndo.site
+        DRUPAL_TEST_DB_URL: mysql://drupal:drupal@database/drupal
+        PHP_IDE_CONFIG: "serverName=government-of-yukon-recruitment-marketing-drupal.lndo.site"
+        SIMPLETEST_BASE_URL: "http://government-of-yukon-recruitment-marketing-drupal.lndo.site"
+        # For use with the selenium image provided.
+        # Comment the 3 lines below out if using your local Chrome.
+        DRUPAL_TEST_WEBDRIVER_HOSTNAME: selenium
+        DRUPAL_TEST_WEBDRIVER_PORT: 4444
+        DRUPAL_TEST_WEBDRIVER_PATH_PREFIX: /wd/hub
+        # Uncomment the 2 below lines to use your local Chrome install.
+        #DRUPAL_TEST_WEBDRIVER_HOSTNAME: PUT YOUR LOCAL IP HERE, run lando ssh -c "env" | grep LANDO_HOST_IP
+        #DRUPAL_TEST_WEBDRIVER_PORT: 9515
+        DRUPAL_TEST_CHROMEDRIVER_AUTOSTART: 'false'
+        DRUPAL_NIGHTWATCH_OUTPUT: reports/nightwatch
+        DRUPAL_NIGHTWATCH_IGNORE_DIRECTORIES: node_modules,vendor,.*,sites/*/files,sites/*/private,sites/simpletest
+tooling:
+  code-standards:
+    service: acro
+    cmd: scripts/code-standards.sh

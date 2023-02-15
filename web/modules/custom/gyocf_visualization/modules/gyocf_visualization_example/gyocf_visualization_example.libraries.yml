@@ -1,0 +1,17 @@
+highcharts:
+  js:
+    https://code.highcharts.com/highcharts.js:
+      { type: external, minified: true }
+    https://code.highcharts.com/modules/series-label.js:
+      { type: external, minified: true }
+    https://code.highcharts.com/modules/exporting.js:
+      { type: external, minified: true }
+    https://code.highcharts.com/modules/accessibility.js:
+      { type: external, minified: true }
+    https://unpkg.com/axios/dist/axios.min.js:
+      { type: external, minified: true }
+    https://momentjs.com/downloads/moment.js: { type: external, minified: true }
+    js/script.js: {}
+  dependencies:
+    - core/once
+    - core/jquery

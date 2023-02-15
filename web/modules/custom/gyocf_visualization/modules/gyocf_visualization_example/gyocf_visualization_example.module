@@ -1,0 +1,18 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for GYOCF Visualization Example module.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function gyocf_visualization_example_theme() {
+  return [
+    'highchart_example' => [
+      'variables' => [],
+      'render element' => 'children',
+    ],
+  ];
+}

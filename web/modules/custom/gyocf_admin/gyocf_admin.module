@@ -1,0 +1,20 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for GYOCF Admin module.
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+
+/**
+ * Implements hook_field_widget_fontawesome_icon_widget_form_alter().
+ */
+function gyocf_admin_field_widget_fontawesome_icon_widget_form_alter(&$element, FormStateInterface $form_state, $context) {
+  if (isset($element['settings']['style'])) {
+    // Set default style value for icons.
+    if (empty($element['icon_name']['#default_value'])) {
+      $element['settings']['style']['#default_value'] = 'far';
+    }
+  }
+}

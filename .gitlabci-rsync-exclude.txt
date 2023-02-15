@@ -1,0 +1,7 @@
+private/
+settings.local.php
+sites/default/files
+.git*
+*.log
+logs/
+temp/

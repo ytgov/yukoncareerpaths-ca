@@ -1,0 +1,7 @@
+name: Gyocf Visualization Example
+type: module
+description: Provides an example of visualization for goycf_visualizaiton module.
+package: Custom
+core_version_requirement: ^9 || ^10
+dependencies:
+  - drupal:gyocf_visualization
