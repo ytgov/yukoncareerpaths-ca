@@ -1,5 +1,0 @@
-name: GYOCF Visualization
-type: module
-description: Provide data visualization and integrate with the client&#039;s api
-package: Custom
-core_version_requirement: ^9 || ^10

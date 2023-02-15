@@ -1,8 +1,0 @@
-# Schema for the configuration files of the GYOCF visualization module.
-gyocf_visualization.settings:
-  type: config_object
-  label: 'GYOCF visualization settings'
-  mapping:
-    api_key:
-      type: string
-      label: 'Api key'
