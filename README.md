@@ -11,22 +11,15 @@
 ### INSTALLATION
 ------------
 
+Start the project
+- `lando start`
+
+Import the DB
+- `lando drush sql-sync @lagoon.main @self`
+
 ### CONFIGURATION
 -------------
 #### Lando Tooling
-- Run `lando code-standards`.
-  - Checks custom modules/themes for code violations.
-- Theme Tooling:
-  - Go into the CLI: `lando ssh`
-  - Base Theme:
-    - Compile: `cd /app/web/themes/custom/govt_yukon && npm i && npm run compile`
-    - Watch: `cd /app/web/themes/custom/govt_yukon && npm i && npm run watch`
-  - Claro Admin Theme:
-    - Compile: `cd /app/web/themes/custom/govt_yukon_claro && npm i && npm run compile`
-    - Watch: `cd /app/web/themes/custom/govt_yukon_claro && npm i && npm run watch`
-  - Project Theme:
-    - Compile: `cd /app/web/themes/custom/govt_yukon_ocf && npm i && npm run compile`
-    - Watch: `cd /app/web/themes/custom/govt_yukon_ocf && npm i && npm run watch`
 
 ### Developer Notes
 -------------
