@@ -14,12 +14,12 @@ tasks:
         service: cli
   post-rollout:
     - run:
-        name: Sync DB and Files from staging if we are not on staging
+        name: Sync DB and Files from production if we are not on production
         command: |
           # Only if we don't have a database yet
           if tables=$(drush sqlq 'show tables;') && [ -z "$tables" ]; then
-              drush sql-sync @lagoon.staging @self -y
-              drush rsync @lagoon.staging:%files @self:%files -- --omit-dir-times --no-perms --no-group --no-owner --chmod=ugo=rwX
+              drush sql-sync @lagoon.production @self -y
+              drush rsync @lagoon.production:%files @self:%files -- --omit-dir-times --no-perms --no-group --no-owner --chmod=ugo=rwX
           fi
         service: cli
         when: LAGOON_ENVIRONMENT_TYPE != "production"
