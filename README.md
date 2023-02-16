@@ -15,7 +15,7 @@ Start the project
 - `lando start`
 
 Import the DB
-- `lando drush sql-sync @lagoon.main @self`
+- `lando drush sql-sync @lagoon.production @self`
 
 ### CONFIGURATION
 -------------
