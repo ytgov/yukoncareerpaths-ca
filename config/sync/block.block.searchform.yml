@@ -1,0 +1,21 @@
+uuid: 0e58feab-9b1b-432d-ad1a-a5e703ae1c23
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - govt_yukon_rms
+id: searchform
+theme: govt_yukon_rms
+region: site_search
+weight: 0
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }

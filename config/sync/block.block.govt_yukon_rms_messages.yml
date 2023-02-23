@@ -1,0 +1,22 @@
+uuid: a9f96b12-1991-4403-a787-4c4b14db847b
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - govt_yukon_rms
+_core:
+  default_config_hash: BZ5tpW7H8X4PVGRm3MImTIHd2tN0eF7zOtp4SpRYUA0
+id: govt_yukon_rms_messages
+theme: govt_yukon_rms
+region: highlighted
+weight: -6
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }

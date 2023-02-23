@@ -1,0 +1,22 @@
+uuid: b1f95322-0f67-4509-b6b6-d3eaa2b41526
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - govt_yukon_claro
+_core:
+  default_config_hash: BZ5tpW7H8X4PVGRm3MImTIHd2tN0eF7zOtp4SpRYUA0
+id: govt_yukon_claro_messages
+theme: govt_yukon_claro
+region: highlighted
+weight: -6
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }

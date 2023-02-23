@@ -1,0 +1,22 @@
+uuid: 9722e3d9-52d3-422f-9947-f97aa0b5ff15
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - govt_yukon_claro
+_core:
+  default_config_hash: VhBzWb7lMRtIOg9G7VSw_0uopi-7zXeHq4vXqqV1HFE
+id: govt_yukon_claro_breadcrumbs
+theme: govt_yukon_claro
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

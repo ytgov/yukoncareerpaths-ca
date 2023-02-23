@@ -1,0 +1,22 @@
+uuid: 385478c6-15ea-4397-86f9-4fa5484ab8a2
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - govt_yukon_claro
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: govt_yukon_claro_content
+theme: govt_yukon_claro
+region: content
+weight: -4
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

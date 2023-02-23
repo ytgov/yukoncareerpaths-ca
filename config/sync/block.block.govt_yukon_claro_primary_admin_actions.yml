@@ -1,0 +1,20 @@
+uuid: bd91cfe7-dcab-48bf-92f2-9e478059a9b8
+langcode: en
+status: true
+dependencies:
+  theme:
+    - govt_yukon_claro
+_core:
+  default_config_hash: Q9_2whdOj1YIomfvsIfopROW4FT_X5pY0DjdOiOaQ5U
+id: govt_yukon_claro_primary_admin_actions
+theme: govt_yukon_claro
+region: content
+weight: -5
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

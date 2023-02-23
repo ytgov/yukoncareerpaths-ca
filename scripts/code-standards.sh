@@ -11,7 +11,7 @@ export PHPCS="vendor/squizlabs/php_codesniffer/bin/phpcs"
 export THEMES_DIR="themes/custom"
 export THEMES_DIR_SASS="themes/custom/govt_yukon/sass/custom"
 export THEMES_ADMIN_DIR_SASS="themes/custom/govt_yukon_claro/sass/custom"
-export THEMES_OCF_DIR_SASS="themes/custom/govt_yukon_ocf/sass/custom"
+export THEMES_RMS_DIR_SASS="themes/custom/govt_yukon_rms/sass/custom"
 
 main() {
   export RESULT=0;
@@ -34,7 +34,7 @@ function run-phpcs() {
   RESULT=$(("$RESULT" | $?))
   "${WORKDIR}/${PHPCS}" -n "${THEMES_ADMIN_DIR_SASS}" --standard="${WORKDIR}/phpcs-standard.xml" --runtime-set installed_paths "${WORKDIR}/vendor/drupal/coder/coder_sniffer" --extensions=scss
   RESULT=$(("$RESULT" | $?))
-  "${WORKDIR}/${PHPCS}" -n "${THEMES_OCF_DIR_SASS}" --standard="${WORKDIR}/phpcs-standard.xml" --runtime-set installed_paths "${WORKDIR}/vendor/drupal/coder/coder_sniffer" --extensions=scss
+  "${WORKDIR}/${PHPCS}" -n "${THEMES_RMS_DIR_SASS}" --standard="${WORKDIR}/phpcs-standard.xml" --runtime-set installed_paths "${WORKDIR}/vendor/drupal/coder/coder_sniffer" --extensions=scss
   RESULT=$(("$RESULT" | $?))
   "${WORKDIR}/${PHPCS}" -s "${THEMES_DIR}" --standard="${WORKDIR}/phpcs-standard.xml" --runtime-set installed_paths "${WORKDIR}/vendor/drupal/coder/coder_sniffer" --extensions=php,module,inc,install,test,profile,theme,info,txt,md --ignore="(*.css|*/node_modules/*)"
   RESULT=$(("$RESULT" | $?))

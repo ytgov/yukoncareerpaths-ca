@@ -10,6 +10,7 @@ dependencies:
     - comment
     - contextual
     - file
+    - fontawesome
     - node
     - path
     - system
@@ -27,6 +28,7 @@ permissions:
   - 'access content overview'
   - 'access contextual links'
   - 'access files overview'
+  - 'access fontawesome additional settings'
   - 'access toolbar'
   - 'access tour'
   - 'administer url aliases'

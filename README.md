@@ -1,4 +1,4 @@
-# Government of Yukon - Recruitment Marketing Drupal
+# Government of Yukon - Recruitment Marketing Site
 
 ### INTRODUCTION
 ------------
@@ -20,6 +20,19 @@ Import the DB
 ### CONFIGURATION
 -------------
 #### Lando Tooling
+- Run `lando code-standards`.
+  - Checks custom modules/themes for code violations.
+- Theme Tooling:
+  - Go into the CLI: `lando ssh`
+  - Base Theme:
+    - Compile: `cd /app/web/themes/custom/govt_yukon && npm i && npm run compile`
+    - Watch: `cd /app/web/themes/custom/govt_yukon && npm i && npm run watch`
+  - Claro Admin Theme:
+    - Compile: `cd /app/web/themes/custom/govt_yukon_claro && npm i && npm run compile`
+    - Watch: `cd /app/web/themes/custom/govt_yukon_claro && npm i && npm run watch`
+  - Project Theme:
+    - Compile: `cd /app/web/themes/custom/govt_yukon_rms && npm i && npm run compile`
+    - Watch: `cd /app/web/themes/custom/govt_yukon_rms && npm i && npm run watch`
 
 ### Developer Notes
 -------------

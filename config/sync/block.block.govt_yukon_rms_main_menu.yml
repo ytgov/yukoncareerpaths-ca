@@ -1,0 +1,31 @@
+uuid: de1ff111-e950-42c8-930b-a4a54eaae9e0
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - menu_block
+  theme:
+    - govt_yukon_rms
+id: govt_yukon_rms_main_menu
+theme: govt_yukon_rms
+region: primary_menu
+weight: 0
+provider: null
+plugin: 'menu_block:main'
+settings:
+  id: 'menu_block:main'
+  label: 'Main Navigation'
+  label_display: '0'
+  provider: menu_block
+  follow: false
+  follow_parent: child
+  label_link: false
+  label_type: block
+  level: 1
+  depth: 3
+  expand_all_items: true
+  parent: 'main:'
+  suggestion: main
+visibility: {  }

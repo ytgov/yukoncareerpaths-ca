@@ -99,19 +99,32 @@ code-standards:
   stage: test
   needs: ["composer-dev"]
   script:
-    - scripts/code-standards.sh
+    # Ensure that PHPCS and Drupal Coder are downloaded.
+    - composer install --no-progress --ansi
 
-debt:
-  extends: .php-debt
-  allow_failure: true
-  needs: ["composer-dev"]
-  before_script:
-    - export PATH="./bin:$PATH"
-  script:
-    - phpdebt web/modules/custom
-    - phpdebt web/themes/custom/govt_yukon
-    - phpdebt web/themes/custom/govt_yukon_claro
-    - phpdebt web/themes/custom/govt_yukon_ocf
+    # Unset the default phpcs args if project supplies a phpcs.xml.dist
+    - if test -f "phpcs.xml.dist"; then export PHPCS_CONFIG_OPTIONS=''; export PHPCS_TARGET_PATHS=''; fi
+    # Set PHPCS Install Paths
+    - vendor/bin/phpcs --config-set installed_paths "../../drupal/coder/coder_sniffer,../../sirbrillig/phpcs-variable-analysis,../../slevomat/coding-standard"
+    # Run the PHPCS against custom modules and themes.
+    - vendor/bin/phpcs $PHPCS_CONFIG_OPTIONS $PHPCS_TARGET_PATHS
+
+    # README check of all custom modules and themes
+    - readmecheck $MODULE_PATH
+    - readmecheck $THEME_PATH
+
+# Disabling PHPDept
+#debt:
+#  extends: .php-debt
+#  allow_failure: true
+#  needs: ["composer-dev"]
+#  before_script:
+#    - export PATH="./bin:$PATH"
+#  script:
+#    - phpdebt web/modules/custom
+#    - phpdebt web/themes/custom/govt_yukon
+#    - phpdebt web/themes/custom/govt_yukon_claro
+#    - phpdebt web/themes/custom/govt_yukon_rms
 
 # Uncomment when custom modules have actual tests to run.
 #phpunit:
