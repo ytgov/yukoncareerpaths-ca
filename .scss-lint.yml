@@ -1,4 +1,4 @@
-scss_files: 'web/themes/custom/govt_yukon_ocf/sass/custom/**/*.scss'
+scss_files: 'web/themes/custom/govt_yukon_rms/sass/custom/**/*.scss'
 
 linters:
   Comment:

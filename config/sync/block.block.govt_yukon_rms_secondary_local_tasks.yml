@@ -1,0 +1,22 @@
+uuid: 11d94f75-e4fa-4964-9fc1-71c707f16d57
+langcode: en
+status: true
+dependencies:
+  theme:
+    - govt_yukon_rms
+_core:
+  default_config_hash: ydSxdq7R66I8UMC460rOzlfzvlUL4VRbdwc6z9DWaUI
+id: govt_yukon_rms_secondary_local_tasks
+theme: govt_yukon_rms
+region: highlighted
+weight: -3
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Secondary tabs'
+  label_display: '0'
+  provider: core
+  primary: false
+  secondary: true
+visibility: {  }

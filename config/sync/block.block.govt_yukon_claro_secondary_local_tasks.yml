@@ -1,0 +1,22 @@
+uuid: 2b14a935-7b34-44b5-aea9-26250e851d80
+langcode: en
+status: true
+dependencies:
+  theme:
+    - govt_yukon_claro
+_core:
+  default_config_hash: ydSxdq7R66I8UMC460rOzlfzvlUL4VRbdwc6z9DWaUI
+id: govt_yukon_claro_secondary_local_tasks
+theme: govt_yukon_claro
+region: pre_content
+weight: -5
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Secondary tabs'
+  label_display: '0'
+  provider: core
+  primary: false
+  secondary: true
+visibility: {  }

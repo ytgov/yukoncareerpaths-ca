@@ -1,0 +1,31 @@
+uuid: 52f7d9ea-44ec-48ab-845f-cd224b7afb16
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer
+  module:
+    - menu_block
+  theme:
+    - govt_yukon_rms
+id: footer
+theme: govt_yukon_rms
+region: footer_menu
+weight: 0
+provider: null
+plugin: 'menu_block:footer'
+settings:
+  id: 'menu_block:footer'
+  label: 'Footer Navigation'
+  label_display: '0'
+  provider: menu_block
+  follow: false
+  follow_parent: child
+  label_link: false
+  label_type: block
+  level: 1
+  depth: 1
+  expand_all_items: false
+  parent: 'footer:'
+  suggestion: footer
+visibility: {  }

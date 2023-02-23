@@ -1,0 +1,22 @@
+uuid: 78d04625-1a71-4e44-8901-5ff97585ed2f
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - govt_yukon_rms
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: govt_yukon_rms_content
+theme: govt_yukon_rms
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

@@ -1,0 +1,18 @@
+//
+// Page Banner.
+//
+
+.comp-page-banner {
+  clear: both;
+  margin: rem(0 0 40px);
+
+  @include media-breakpoint-up(md) {
+    margin: rem(0 0 60px);
+  }
+
+  img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+}

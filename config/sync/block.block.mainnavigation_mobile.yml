@@ -1,0 +1,31 @@
+uuid: 5258b933-bca1-4fed-9212-1e0c451c0805
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - menu_block
+  theme:
+    - govt_yukon_rms
+id: mainnavigation_mobile
+theme: govt_yukon_rms
+region: mobile_menu
+weight: 0
+provider: null
+plugin: 'menu_block:main'
+settings:
+  id: 'menu_block:main'
+  label: 'Main Navigation - Mobile'
+  label_display: '0'
+  provider: menu_block
+  follow: false
+  follow_parent: child
+  label_link: false
+  label_type: block
+  level: 1
+  depth: 3
+  expand_all_items: true
+  parent: 'main:'
+  suggestion: main
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: c43c0b5a-161f-4ef5-aae3-7e12d27c53bc
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - govt_yukon_claro
+_core:
+  default_config_hash: VfPFqqxfkomud5CO8DUijw85QIl9GIxh_nIxLOYESxg
+id: govt_yukon_claro_help
+theme: govt_yukon_claro
+region: help
+weight: 0
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }
