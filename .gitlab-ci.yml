@@ -85,6 +85,7 @@ composer-dev:
     - composer config data-dir "${CI_PROJECT_DIR}/.composer"
     - composer config cache-dir "${CI_PROJECT_DIR}/.composer/cache"
   script:
+    - composer self-update
     - composer install --no-interaction --no-progress --ansi
   artifacts:
     expire_in: 90min
