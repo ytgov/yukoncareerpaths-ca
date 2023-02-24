@@ -1,0 +1,14 @@
+uuid: f4c170ca-cd31-4c77-8fb0-68289cc1a753
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.job_types
+id: taxonomy_term.job_types.default
+targetEntityType: taxonomy_term
+bundle: job_types
+mode: default
+content: {  }
+hidden:
+  description: true
+  langcode: true

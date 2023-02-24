@@ -1,0 +1,8 @@
+uuid: d0d2871e-f6ed-4a1d-ac80-f12578172cc4
+langcode: en
+status: true
+dependencies: {  }
+name: Locations
+vid: locations
+description: 'Locations related to career profiles.'
+weight: 0

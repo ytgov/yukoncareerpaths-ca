@@ -1,0 +1,8 @@
+uuid: 56b4811f-b7dc-449e-96e0-85360a3a4f42
+langcode: en
+status: true
+dependencies: {  }
+name: Departments
+vid: departments
+description: 'Departments related to career profiles.'
+weight: 0

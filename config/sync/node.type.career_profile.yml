@@ -1,0 +1,19 @@
+uuid: 399ebdf3-371b-42b8-90a2-e9aafc97df5b
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - footer
+      - main
+    parent: 'main:'
+name: 'Career Profile'
+type: career_profile
+description: 'A profile that contains information related to a career. Is displayed within the listing on the Career Profiles section of the site.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false
