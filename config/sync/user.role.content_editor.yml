@@ -3,14 +3,29 @@ langcode: en
 status: true
 dependencies:
   config:
-    - node.type.article
+    - filter.format.basic_text
+    - filter.format.full_html
+    - media.type.document
+    - media.type.image
+    - media.type.remote_video
+    - media.type.svg
+    - node.type.career_profile
+    - node.type.community_profile
+    - node.type.landing_page
     - node.type.page
-    - taxonomy.vocabulary.tags
+    - taxonomy.vocabulary.departments
+    - taxonomy.vocabulary.job_types
+    - taxonomy.vocabulary.locations
   module:
+    - block_content
     - comment
+    - content_translation
     - contextual
     - file
+    - filter
     - fontawesome
+    - media
+    - menu_link_content
     - node
     - path
     - system
@@ -29,22 +44,78 @@ permissions:
   - 'access contextual links'
   - 'access files overview'
   - 'access fontawesome additional settings'
+  - 'access media overview'
+  - 'access taxonomy overview'
   - 'access toolbar'
   - 'access tour'
   - 'administer url aliases'
-  - 'create article content'
+  - 'create career_profile content'
+  - 'create community_profile content'
+  - 'create content translations'
+  - 'create document media'
+  - 'create image media'
+  - 'create landing_page content'
   - 'create page content'
-  - 'create terms in tags'
+  - 'create remote_video media'
+  - 'create svg media'
+  - 'create terms in departments'
+  - 'create terms in job_types'
+  - 'create terms in locations'
   - 'create url aliases'
-  - 'delete article revisions'
-  - 'delete own article content'
+  - 'delete career_profile revisions'
+  - 'delete community_profile revisions'
+  - 'delete content translations'
+  - 'delete landing_page revisions'
+  - 'delete own career_profile content'
+  - 'delete own community_profile content'
+  - 'delete own document media'
+  - 'delete own image media'
+  - 'delete own landing_page content'
   - 'delete own page content'
+  - 'delete own remote_video media'
+  - 'delete own svg media'
   - 'delete page revisions'
-  - 'edit own article content'
+  - 'delete terms in departments'
+  - 'delete terms in job_types'
+  - 'delete terms in locations'
+  - 'edit own career_profile content'
   - 'edit own comments'
+  - 'edit own community_profile content'
+  - 'edit own document media'
+  - 'edit own image media'
+  - 'edit own landing_page content'
   - 'edit own page content'
-  - 'edit terms in tags'
+  - 'edit own remote_video media'
+  - 'edit own svg media'
+  - 'edit terms in departments'
+  - 'edit terms in job_types'
+  - 'edit terms in locations'
   - 'revert all revisions'
+  - 'revert career_profile revisions'
+  - 'revert community_profile revisions'
+  - 'revert landing_page revisions'
+  - 'revert page revisions'
+  - 'translate any entity'
+  - 'translate block_content'
+  - 'translate career_profile node'
+  - 'translate community_profile node'
+  - 'translate departments taxonomy_term'
+  - 'translate document media'
+  - 'translate image media'
+  - 'translate job_types taxonomy_term'
+  - 'translate landing_page node'
+  - 'translate locations taxonomy_term'
+  - 'translate menu_link_content'
+  - 'translate page node'
+  - 'translate svg media'
+  - 'update content translations'
+  - 'update media'
+  - 'use text format basic_text'
+  - 'use text format full_html'
   - 'view all revisions'
+  - 'view career_profile revisions'
+  - 'view community_profile revisions'
+  - 'view landing_page revisions'
   - 'view own unpublished content'
+  - 'view page revisions'
   - 'view the administration theme'

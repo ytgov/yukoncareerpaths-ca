@@ -1,0 +1,19 @@
+uuid: 4141868d-270c-4a7e-a4c9-cf2080437a16
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - footer
+      - main
+    parent: 'main:'
+name: 'Community Profile'
+type: community_profile
+description: 'A profile displaying information about a community. Is displayed within community listings.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

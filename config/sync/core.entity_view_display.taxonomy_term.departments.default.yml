@@ -1,0 +1,14 @@
+uuid: bb3bc52d-ce65-4a64-8135-c3ce1d035a4d
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.departments
+id: taxonomy_term.departments.default
+targetEntityType: taxonomy_term
+bundle: departments
+mode: default
+content: {  }
+hidden:
+  description: true
+  langcode: true

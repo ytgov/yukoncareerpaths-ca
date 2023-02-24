@@ -1,0 +1,18 @@
+uuid: a35bde0f-5871-4270-a314-5ef79bfb112f
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.svg
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: media.svg
+target_entity_type_id: media
+target_bundle: svg
+default_langcode: site_default
+language_alterable: true

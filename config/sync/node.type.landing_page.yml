@@ -1,0 +1,19 @@
+uuid: 0f4ef95b-a98d-47f3-b37f-9af425e29c06
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - footer
+      - main
+    parent: 'main:'
+name: 'Landing Page'
+type: landing_page
+description: 'A full-width page without any sidebars. Typically used for pages like the homepage etc.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

@@ -1,0 +1,8 @@
+uuid: c233c4bf-0b7e-4a94-ad77-79c6686b0e6b
+langcode: en
+status: true
+dependencies: {  }
+name: 'Job Types'
+vid: job_types
+description: 'Job types related to career profiles.'
+weight: 0

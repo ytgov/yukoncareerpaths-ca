@@ -1,0 +1,29 @@
+uuid: 43252380-1460-4aaa-9c0e-a28762ae53ce
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_locations
+    - node.type.career_profile
+    - taxonomy.vocabulary.locations
+id: node.career_profile.field_locations
+field_name: field_locations
+entity_type: node
+bundle: career_profile
+label: Locations
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      locations: locations
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

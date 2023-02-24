@@ -1,0 +1,29 @@
+uuid: 9718d676-aed5-446f-8ce5-c4195801eb26
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.community_profile.body
+    - field.field.node.community_profile.field_image
+    - node.type.community_profile
+  module:
+    - text
+    - user
+id: node.community_profile.teaser
+targetEntityType: node
+bundle: community_profile
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_image: true
+  langcode: true
+  links: true

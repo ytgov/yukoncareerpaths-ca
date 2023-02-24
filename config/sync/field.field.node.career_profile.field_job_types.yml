@@ -1,0 +1,29 @@
+uuid: 7672f7d9-a053-43c9-add9-9063b2973c62
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_job_types
+    - node.type.career_profile
+    - taxonomy.vocabulary.job_types
+id: node.career_profile.field_job_types
+field_name: field_job_types
+entity_type: node
+bundle: career_profile
+label: 'Job Types'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      job_types: job_types
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
