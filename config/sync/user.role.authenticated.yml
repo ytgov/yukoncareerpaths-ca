@@ -8,7 +8,7 @@ dependencies:
   module:
     - comment
     - filter
-    - google_analytics
+    - matomo
     - media
     - search
     - shortcut
@@ -23,7 +23,7 @@ permissions:
   - 'access comments'
   - 'access content'
   - 'access shortcuts'
-  - 'opt-in or out of google analytics tracking'
+  - 'opt-in or out of matomo tracking'
   - 'post comments'
   - 'search content'
   - 'skip comment approval'
