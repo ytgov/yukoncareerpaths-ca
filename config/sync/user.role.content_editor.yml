@@ -18,7 +18,6 @@ dependencies:
     - taxonomy.vocabulary.locations
   module:
     - block_content
-    - comment
     - content_translation
     - contextual
     - file
@@ -31,7 +30,6 @@ dependencies:
     - system
     - taxonomy
     - toolbar
-    - tour
 _core:
   default_config_hash: Wur9kcEOwY1Jal81NssKnz3RhVJxAvBwyWQBGcA_1Go
 id: content_editor
@@ -47,7 +45,6 @@ permissions:
   - 'access media overview'
   - 'access taxonomy overview'
   - 'access toolbar'
-  - 'access tour'
   - 'administer url aliases'
   - 'create career_profile content'
   - 'create community_profile content'
@@ -79,7 +76,6 @@ permissions:
   - 'delete terms in job_types'
   - 'delete terms in locations'
   - 'edit own career_profile content'
-  - 'edit own comments'
   - 'edit own community_profile content'
   - 'edit own document media'
   - 'edit own image media'
