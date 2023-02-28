@@ -29,6 +29,7 @@ module:
   file_mdm_font: 0
   filter: 0
   fontawesome: 0
+  google_analytics: 0
   help: 0
   history: 0
   image: 0
@@ -43,14 +44,17 @@ module:
   menu_block: 0
   menu_link_content: 0
   menu_ui: 0
+  metatag: 0
   mysql: 0
   node: 0
   options: 0
   page_cache: 0
   path: 0
   path_alias: 0
+  redirect: 0
   search: 0
   shortcut: 0
+  simple_sitemap: 0
   svg_image_field: 0
   system: 0
   taxonomy: 0
@@ -61,6 +65,7 @@ module:
   twig_tweak: 0
   update: 0
   user: 0
+  views_bulk_operations: 0
   views_ui: 0
   pathauto: 1
   content_translation: 10
