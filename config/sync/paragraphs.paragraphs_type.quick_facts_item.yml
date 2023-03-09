@@ -1,0 +1,15 @@
+uuid: acffe15b-7fe7-4f7a-b4a1-438e13cad7bd
+langcode: en
+status: true
+dependencies:
+  module:
+    - layout_paragraphs
+id: quick_facts_item
+label: 'Quick Facts Item'
+icon_uuid: null
+icon_default: null
+description: 'Sub-Component: An item that appears within a Quick Facts component.'
+behavior_plugins:
+  layout_paragraphs:
+    enabled: false
+    available_layouts: {  }

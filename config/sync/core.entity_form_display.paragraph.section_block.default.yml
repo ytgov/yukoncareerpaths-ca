@@ -1,0 +1,26 @@
+uuid: 5bd376c3-d5b0-41b4-87a9-b643c978c1d9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.section_block.field_block
+    - paragraphs.paragraphs_type.section_block
+id: paragraph.section_block.default
+targetEntityType: paragraph
+bundle: section_block
+mode: default
+content:
+  field_block:
+    type: options_select
+    weight: -199
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  layout_paragraphs_fields:
+    weight: -200
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

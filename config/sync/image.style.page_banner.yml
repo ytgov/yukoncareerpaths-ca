@@ -1,0 +1,15 @@
+uuid: 2e6c29e8-1663-4c48-9e21-435517909026
+langcode: en
+status: true
+dependencies: {  }
+name: page_banner
+label: 'Page Banner (1440x450)'
+effects:
+  47d0ecc6-89cc-490e-aa6e-78c0c0d5fc28:
+    uuid: 47d0ecc6-89cc-490e-aa6e-78c0c0d5fc28
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1440
+      height: 450
+      anchor: center-center

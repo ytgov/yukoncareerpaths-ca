@@ -9,14 +9,22 @@
   {% set share_this_page_content %}
     {% include '@govt_yukon/includes/share-this-page.html.twig' %}
   {% endset %}
+  {% set page_accent = false %}
 
   {%
     set site_content_classes = [
       'site-content',
       (node and node.field_hide_header_elements.value) ? 'site-content--hide-header-elements',
-      (node and node.field_disable_page_top_margin.value) ? 'site-content--disable-top-margin'
+      (node and node.field_disable_page_top_margin.value) ? 'site-content--disable-top-margin',
+      page_accent ? 'site-content--with-page-accent'
     ]
   %}
+
+  {% if page_accent %}
+    <div class="comp-page-accent comp-page-accent--aurora">
+      <div class="comp-page-accent__content"></div>
+    </div>
+  {% endif %}
 
   <div{{ site_content_attributes.addClass(site_content_classes) }} class="site-content{{ site_content_class }}">
     <main class="content__main-content clearfix" role="main">

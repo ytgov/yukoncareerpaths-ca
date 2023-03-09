@@ -3,10 +3,16 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.page.body
+    - field.field.node.page.field_components
+    - field.field.node.page.field_disable_page_top_margin
+    - field.field.node.page.field_hide_header_elements
+    - field.field.node.page.field_page_banner
+    - field.field.node.page.field_share_this_page
+    - image.style.page_banner
     - node.type.page
   module:
-    - text
+    - layout_paragraphs
+    - media
     - user
 _core:
   default_config_hash: M_Y8L5tfmhx7DR143E05YyZSpvgil6VFvqcfBWykalg
@@ -15,13 +21,29 @@ targetEntityType: node
 bundle: page
 mode: default
 content:
-  body:
-    type: text_default
+  field_components:
+    type: layout_paragraphs
     label: hidden
-    settings: {  }
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_page_banner:
+    type: media_thumbnail
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: page_banner
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
     weight: 0
     region: content
 hidden:
+  field_disable_page_top_margin: true
+  field_hide_header_elements: true
+  field_share_this_page: true
   langcode: true
   links: true

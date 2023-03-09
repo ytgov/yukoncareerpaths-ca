@@ -848,6 +848,17 @@ button {
   }
 }
 
+// Button is an external link.
+.btn--is-external {
+  // Icon.
+  &::after {
+    @extend %fa-icon;
+    @extend .far;
+    content: fa-content($fa-var-external-link);
+    margin: rem(0 0 0 8rem);
+  }
+}
+
 // Resource Download.
 .btn--resource-download {
   &::before {

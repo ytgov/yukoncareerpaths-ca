@@ -1,0 +1,15 @@
+uuid: 0a22d84d-f4cc-4103-97d4-dc9f586988b8
+langcode: en
+status: true
+dependencies:
+  module:
+    - layout_paragraphs
+id: quick_facts
+label: 'Quick Facts'
+icon_uuid: null
+icon_default: null
+description: 'Component: Display basic text or links in a Quick Facts box element.'
+behavior_plugins:
+  layout_paragraphs:
+    enabled: false
+    available_layouts: {  }

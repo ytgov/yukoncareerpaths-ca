@@ -1,0 +1,27 @@
+uuid: be9d6be1-f44e-4230-86e7-fba7c6df28d0
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_content_list_style
+field_name: field_content_list_style
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: small_images
+      label: 'Small Images'
+    -
+      value: large_images
+      label: 'Large Images'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

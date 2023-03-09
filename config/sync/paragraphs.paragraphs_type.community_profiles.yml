@@ -1,0 +1,15 @@
+uuid: 85c18815-3357-41d2-b73a-4a069a51222a
+langcode: en
+status: true
+dependencies:
+  module:
+    - layout_paragraphs
+id: community_profiles
+label: 'Community Profiles'
+icon_uuid: null
+icon_default: null
+description: 'Component: Display a listing of Community Profiles.'
+behavior_plugins:
+  layout_paragraphs:
+    enabled: false
+    available_layouts: {  }

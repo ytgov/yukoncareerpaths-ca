@@ -1,0 +1,23 @@
+uuid: 1ef0ef6d-035f-49a4-b62f-ca0f6a33b073
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_content_list_style
+    - paragraphs.paragraphs_type.content_list
+  module:
+    - options
+id: paragraph.content_list.field_content_list_style
+field_name: field_content_list_style
+entity_type: paragraph
+bundle: content_list
+label: 'Content List Style'
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: small_images
+default_value_callback: ''
+settings: {  }
+field_type: list_string

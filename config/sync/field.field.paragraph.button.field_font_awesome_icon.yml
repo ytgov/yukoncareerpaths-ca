@@ -1,0 +1,21 @@
+uuid: 7f6a93ab-748e-4f9b-84f5-a8e574fc4c60
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_font_awesome_icon
+    - paragraphs.paragraphs_type.button
+  module:
+    - fontawesome
+id: paragraph.button.field_font_awesome_icon
+field_name: field_font_awesome_icon
+entity_type: paragraph
+bundle: button
+label: 'Font Awesome Icon'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: fontawesome_icon

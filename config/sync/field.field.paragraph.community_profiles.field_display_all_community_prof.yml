@@ -1,0 +1,23 @@
+uuid: 6a6c0452-94bf-4c06-b7f6-4646eae22398
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_display_all_community_prof
+    - paragraphs.paragraphs_type.community_profiles
+id: paragraph.community_profiles.field_display_all_community_prof
+field_name: field_display_all_community_prof
+entity_type: paragraph
+bundle: community_profiles
+label: 'Display all Community Profiles'
+description: 'If selected, will override the above selected Community Profiles and display a listing of all the Community Profiles (with pagination if necessary).'
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

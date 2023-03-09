@@ -44,9 +44,17 @@
   @import '../../../govt_yukon/sass/custom/base/global-elements';
   @import '../../../govt_yukon/sass/custom/base/typography';
   @import '../../../govt_yukon/sass/custom/base/forms';
+  @import '../../../govt_yukon/sass/custom/layouts/layouts';
 
   // Theme Components.
   @import '../../../govt_yukon/sass/custom/components/all';
+
+  // RMS Theme Elements.
+  @import '../../../govt_yukon_rms/sass/custom/base/global-elements';
+  @import '../../../govt_yukon_rms/sass/custom/base/typography';
+  @import '../../../govt_yukon_rms/sass/custom/components/all';
+  @import '../../../govt_yukon_rms/sass/custom/nodes/career-profile';
+  @import '../../../govt_yukon_rms/sass/custom/nodes/community-profile';
 
   //
   // Overrides to improve visuals while editing.

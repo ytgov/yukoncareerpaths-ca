@@ -20,6 +20,54 @@ two_column:
       label: First
     second:
       label: Second
+two_column_58_42:
+  label: '2 column (58% / 42%)'
+  category: 'GOY Layouts'
+  template: templates/layouts/two-column-58-42
+  default_region: first
+  icon_map:
+    - [ first, first, second ]
+  regions:
+    first:
+      label: First
+    second:
+      label: Second
+two_column_42_58:
+  label: '2 column (42% / 58%)'
+  category: 'GOY Layouts'
+  template: templates/layouts/two-column-42-58
+  default_region: first
+  icon_map:
+    - [ first, second, second ]
+  regions:
+    first:
+      label: First
+    second:
+      label: Second
+two_column_66_33:
+  label: '2 column (66% / 33%)'
+  category: 'GOY Layouts'
+  template: templates/layouts/two-column-66-33
+  default_region: first
+  icon_map:
+    - [ first, first, second ]
+  regions:
+    first:
+      label: First
+    second:
+      label: Second
+two_column_33_66:
+  label: '2 column (33% / 66%)'
+  category: 'GOY Layouts'
+  template: templates/layouts/two-column-33-66
+  default_region: first
+  icon_map:
+    - [ first, second, second ]
+  regions:
+    first:
+      label: First
+    second:
+      label: Second
 three_column:
   label: '3 column'
   category: 'GOY Layouts'
@@ -77,6 +125,30 @@ nested_two_column:
   default_region: first
   icon_map:
     - [ first, second ]
+  regions:
+    first:
+      label: First
+    second:
+      label: Second
+nested_two_column_58_42:
+  label: '2 column (58% / 42%)'
+  category: 'GOY Nested Layouts'
+  template: templates/layouts/nested-two-column-58-42
+  default_region: first
+  icon_map:
+    - [ first, first, second ]
+  regions:
+    first:
+      label: First
+    second:
+      label: Second
+nested_two_column_42_58:
+  label: '2 column (42% / 58%)'
+  category: 'GOY Nested Layouts'
+  template: templates/layouts/nested-two-column-42-58
+  default_region: first
+  icon_map:
+    - [ first, second, second ]
   regions:
     first:
       label: First

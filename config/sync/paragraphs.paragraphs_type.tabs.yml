@@ -1,0 +1,15 @@
+uuid: c0e29f76-d533-4d94-ae65-608e6c10fbe0
+langcode: en
+status: true
+dependencies:
+  module:
+    - layout_paragraphs
+id: tabs
+label: Tabs
+icon_uuid: null
+icon_default: null
+description: 'Component: Display content within clickable tabs.'
+behavior_plugins:
+  layout_paragraphs:
+    enabled: false
+    available_layouts: {  }

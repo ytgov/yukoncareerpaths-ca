@@ -1,0 +1,30 @@
+uuid: 22c5b1a2-08ae-4433-9ad4-df20e2544ffe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.divider.field_margin_bottom
+    - field.field.paragraph.divider.field_margin_top
+    - paragraphs.paragraphs_type.divider
+id: paragraph.divider.default
+targetEntityType: paragraph
+bundle: divider
+mode: default
+content:
+  field_margin_bottom:
+    type: number
+    weight: 0
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_margin_top:
+    type: number
+    weight: 1
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

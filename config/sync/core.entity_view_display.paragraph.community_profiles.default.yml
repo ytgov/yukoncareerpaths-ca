@@ -1,0 +1,26 @@
+uuid: 968f5ee1-59bf-43ed-945a-fd45f3d19a90
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.community_profiles.field_community_profiles
+    - field.field.paragraph.community_profiles.field_display_all_community_prof
+    - field.field.paragraph.community_profiles.field_link
+    - paragraphs.paragraphs_type.community_profiles
+id: paragraph.community_profiles.default
+targetEntityType: paragraph
+bundle: community_profiles
+mode: default
+content:
+  field_community_profiles:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_display_all_community_prof: true
+  field_link: true

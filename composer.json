@@ -16,6 +16,7 @@
     },
     "require": {
         "composer/installers": "^2.0",
+        "cweagans/composer-patches": "^1.7",
         "drupal/admin_toolbar": "^3.3",
         "drupal/allowed_formats": "^2.0",
         "drupal/coder": "8.3.17",
@@ -40,6 +41,8 @@
         "drupal/token": "^1.11",
         "drupal/twig_tweak": "^3.2",
         "drupal/views_bulk_operations": "^4.2",
+        "drupal/views_infinite_scroll": "^2.0",
+        "drupal/webform": "^6.2@beta",
         "drush/drush": "^11.4"
     },
     "conflict": {
@@ -53,7 +56,8 @@
             "drupal/core-composer-scaffold": true,
             "drupal/core-project-message": true,
             "dealerdirect/phpcodesniffer-composer-installer": true,
-            "phpstan/extension-installer": true
+            "phpstan/extension-installer": true,
+            "cweagans/composer-patches": true
         },
         "sort-packages": true
     },
@@ -115,6 +119,14 @@
                 "  * Remove the plugin that prints this message:",
                 "      composer remove drupal/core-project-message"
             ]
+        },
+        "patches": {
+            "drupal/core": {
+                "Dialog drupalAutoButtons option should be respected on initial load": "https://www.drupal.org/files/issues/2022-12-16/2793343_75_0.patch"
+            },
+            "drupal/entity_reference_revisions": {
+                "Non-translatable fields can only be changed when updating the current revision": "https://www.drupal.org/files/issues/2020-06-09/3150084_2.patch"
+            }
         }
     },
     "require-dev": {

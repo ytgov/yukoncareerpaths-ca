@@ -1,0 +1,23 @@
+uuid: 9e930675-1a86-42f5-87f3-1c5838884cd8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_slide_text_alignment
+    - paragraphs.paragraphs_type.carousel_slide
+  module:
+    - options
+id: paragraph.carousel_slide.field_slide_text_alignment
+field_name: field_slide_text_alignment
+entity_type: paragraph
+bundle: carousel_slide
+label: 'Slide Text Alignment'
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: left
+default_value_callback: ''
+settings: {  }
+field_type: list_string

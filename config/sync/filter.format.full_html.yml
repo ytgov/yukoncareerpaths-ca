@@ -2,6 +2,10 @@ uuid: 5324b028-4db0-4543-960a-bcc8d4af7eca
 langcode: en
 status: true
 dependencies:
+  config:
+    - core.entity_view_mode.media.large
+    - core.entity_view_mode.media.medium
+    - core.entity_view_mode.media.small
   module:
     - editor
     - media
@@ -35,25 +39,12 @@ filters:
     status: true
     weight: -46
     settings: {  }
-  filter_html_image_secure:
-    id: filter_html_image_secure
-    provider: filter
-    status: false
-    weight: -42
-    settings: {  }
   filter_autop:
     id: filter_autop
     provider: filter
     status: true
     weight: -50
     settings: {  }
-  filter_url:
-    id: filter_url
-    provider: filter
-    status: false
-    weight: -43
-    settings:
-      filter_url_length: 72
   filter_html:
     id: filter_html
     provider: filter
@@ -69,6 +60,19 @@ filters:
     status: false
     weight: -44
     settings: {  }
+  filter_html_image_secure:
+    id: filter_html_image_secure
+    provider: filter
+    status: false
+    weight: -42
+    settings: {  }
+  filter_url:
+    id: filter_url
+    provider: filter
+    status: false
+    weight: -43
+    settings:
+      filter_url_length: 72
   media_embed:
     id: media_embed
     provider: media
@@ -76,7 +80,11 @@ filters:
     weight: -41
     settings:
       default_view_mode: default
-      allowed_view_modes: {  }
+      allowed_view_modes:
+        default: default
+        large: large
+        medium: medium
+        small: small
       allowed_media_types:
         image: image
         remote_video: remote_video

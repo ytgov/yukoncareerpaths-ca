@@ -1,0 +1,23 @@
+uuid: 9085b792-1070-4113-b269-2f3702570e1d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_quote_alignment
+    - paragraphs.paragraphs_type.block_quote
+  module:
+    - options
+id: paragraph.block_quote.field_quote_alignment
+field_name: field_quote_alignment
+entity_type: paragraph
+bundle: block_quote
+label: 'Quote Alignment'
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: left
+default_value_callback: ''
+settings: {  }
+field_type: list_string

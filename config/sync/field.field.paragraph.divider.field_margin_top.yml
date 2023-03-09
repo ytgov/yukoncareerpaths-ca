@@ -1,0 +1,23 @@
+uuid: 651fffea-de51-4ca6-8440-49bdf9326df8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_margin_top
+    - paragraphs.paragraphs_type.divider
+id: paragraph.divider.field_margin_top
+field_name: field_margin_top
+entity_type: paragraph
+bundle: divider
+label: 'Margin Top'
+description: 'Optional custom top margin value in pixels. Creates empty space above this component.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: px
+field_type: integer

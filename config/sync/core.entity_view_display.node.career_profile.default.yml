@@ -4,13 +4,16 @@ status: true
 dependencies:
   config:
     - field.field.node.career_profile.body
+    - field.field.node.career_profile.field_components
     - field.field.node.career_profile.field_departments
     - field.field.node.career_profile.field_image
     - field.field.node.career_profile.field_job_types
     - field.field.node.career_profile.field_locations
-    - image.style.large
+    - field.field.node.career_profile.field_share_this_page
+    - image.style.card_image
     - node.type.career_profile
   module:
+    - layout_paragraphs
     - media
     - text
     - user
@@ -26,20 +29,29 @@ content:
     third_party_settings: {  }
     weight: 4
     region: content
+  field_components:
+    type: layout_paragraphs
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 5
+    region: content
   field_departments:
     type: entity_reference_label
     label: inline
     settings:
       link: false
     third_party_settings: {  }
-    weight: 2
+    weight: 1
     region: content
   field_image:
     type: media_thumbnail
     label: hidden
     settings:
       image_link: ''
-      image_style: large
+      image_style: card_image
       image_loading:
         attribute: lazy
     third_party_settings: {  }
@@ -51,7 +63,7 @@ content:
     settings:
       link: false
     third_party_settings: {  }
-    weight: 3
+    weight: 2
     region: content
   field_locations:
     type: entity_reference_label
@@ -59,8 +71,9 @@ content:
     settings:
       link: false
     third_party_settings: {  }
-    weight: 1
+    weight: 3
     region: content
 hidden:
+  field_share_this_page: true
   langcode: true
   links: true

@@ -1,0 +1,15 @@
+uuid: 4ea962d4-b417-4efa-bb78-99b506a37e9d
+langcode: en
+status: true
+dependencies:
+  module:
+    - layout_paragraphs
+id: career_profiles
+label: 'Career Profiles'
+icon_uuid: null
+icon_default: null
+description: 'Component: Display a listing of Career Profiles.'
+behavior_plugins:
+  layout_paragraphs:
+    enabled: false
+    available_layouts: {  }

@@ -1,0 +1,44 @@
+uuid: a680d507-b21a-42d1-93da-27954fb9479b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.community_profiles.field_community_profiles
+    - field.field.paragraph.community_profiles.field_display_all_community_prof
+    - field.field.paragraph.community_profiles.field_link
+    - paragraphs.paragraphs_type.community_profiles
+  module:
+    - link
+id: paragraph.community_profiles.default
+targetEntityType: paragraph
+bundle: community_profiles
+mode: default
+content:
+  field_community_profiles:
+    type: entity_reference_autocomplete
+    weight: 0
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_display_all_community_prof:
+    type: boolean_checkbox
+    weight: 1
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_link:
+    type: link_default
+    weight: 2
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

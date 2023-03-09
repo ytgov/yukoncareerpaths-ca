@@ -1,0 +1,85 @@
+uuid: bb7e6633-3100-4089-a757-a89446bfb9bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_buttons
+    - paragraphs.paragraphs_type.button
+    - paragraphs.paragraphs_type.carousel_slide
+  module:
+    - entity_reference_revisions
+id: paragraph.carousel_slide.field_buttons
+field_name: field_buttons
+entity_type: paragraph
+bundle: carousel_slide
+label: 'Buttons (Optional)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      button: button
+    negate: 0
+    target_bundles_drag_drop:
+      basic_content:
+        weight: 11
+        enabled: false
+      block_quote:
+        weight: 12
+        enabled: false
+      button:
+        weight: 13
+        enabled: true
+      buttons:
+        weight: 14
+        enabled: false
+      card:
+        weight: 15
+        enabled: false
+      cards:
+        weight: 16
+        enabled: false
+      career_profiles:
+        weight: 26
+        enabled: false
+      carousel:
+        weight: 17
+        enabled: false
+      carousel_slide:
+        weight: 18
+        enabled: false
+      community_profiles:
+        weight: 29
+        enabled: false
+      content_list:
+        weight: 30
+        enabled: false
+      content_list_item:
+        weight: 31
+        enabled: false
+      divider:
+        weight: 32
+        enabled: false
+      page_section:
+        weight: 19
+        enabled: false
+      section:
+        weight: 20
+        enabled: false
+      spacer:
+        weight: 35
+        enabled: false
+      tab:
+        weight: 36
+        enabled: false
+      tabs:
+        weight: 37
+        enabled: false
+      webform:
+        weight: 38
+        enabled: false
+field_type: entity_reference_revisions

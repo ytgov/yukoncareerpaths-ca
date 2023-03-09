@@ -1,0 +1,76 @@
+uuid: e35995a6-a95a-461f-bd98-441412fc50e3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.button.field_button_style
+    - field.field.paragraph.button.field_external_link
+    - field.field.paragraph.button.field_font_awesome_icon
+    - field.field.paragraph.button.field_icon_image
+    - field.field.paragraph.button.field_link
+    - paragraphs.paragraphs_type.button
+  module:
+    - field_group
+    - fontawesome
+    - link
+    - media_library
+third_party_settings:
+  field_group:
+    group_icon:
+      children:
+        - field_font_awesome_icon
+        - field_icon_image
+      label: Icon
+      region: content
+      parent_name: ''
+      weight: 3
+      format_type: details
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        open: false
+        description: ''
+        required_fields: true
+id: paragraph.button.default
+targetEntityType: paragraph
+bundle: button
+mode: default
+content:
+  field_button_style:
+    type: options_select
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_external_link:
+    type: boolean_checkbox
+    weight: 2
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_font_awesome_icon:
+    type: fontawesome_icon_widget
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_icon_image:
+    type: media_library_widget
+    weight: 4
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_link:
+    type: link_default
+    weight: 1
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,36 @@
+uuid: 3cb649ae-9446-4207-81a6-fa2ed0584740
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.buttons.field_buttons
+    - paragraphs.paragraphs_type.buttons
+  module:
+    - paragraphs
+id: paragraph.buttons.default
+targetEntityType: paragraph
+bundle: buttons
+mode: default
+content:
+  field_buttons:
+    type: paragraphs
+    weight: 0
+    region: content
+    settings:
+      title: Button
+      title_plural: Buttons
+      edit_mode: closed
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: button
+      features:
+        add_above: '0'
+        collapse_edit_all: '0'
+        duplicate: '0'
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

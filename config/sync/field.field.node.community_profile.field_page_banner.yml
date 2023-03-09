@@ -1,0 +1,29 @@
+uuid: 3b9e2fb5-d3f0-43dc-9cf5-d83d7438f147
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_page_banner
+    - media.type.image
+    - node.type.community_profile
+id: node.community_profile.field_page_banner
+field_name: field_page_banner
+entity_type: node
+bundle: community_profile
+label: 'Page Banner'
+description: 'Display a page banner image at the top of the page. If multiple images are selected, they will appear within a carousel. Recommended size: 1440x450 px or larger.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

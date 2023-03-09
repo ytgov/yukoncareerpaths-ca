@@ -1,0 +1,21 @@
+uuid: 6cdb96c3-77cb-4b2e-b8cc-3b5afc4783aa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.quick_facts
+id: paragraph.quick_facts.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: quick_facts
+label: Title
+description: 'The title that appears in the header of this Quick Facts box.'
+required: true
+translatable: true
+default_value:
+  -
+    value: 'Quick facts'
+default_value_callback: ''
+settings: {  }
+field_type: string

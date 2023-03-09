@@ -1,0 +1,15 @@
+uuid: 841bb1d1-99d7-47fe-acc2-f99239575d46
+langcode: en
+status: true
+dependencies:
+  module:
+    - layout_paragraphs
+id: buttons
+label: Buttons
+icon_uuid: null
+icon_default: null
+description: 'Component: Display a group of buttons.'
+behavior_plugins:
+  layout_paragraphs:
+    enabled: false
+    available_layouts: {  }

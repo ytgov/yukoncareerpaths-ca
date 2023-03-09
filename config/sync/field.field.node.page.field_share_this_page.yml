@@ -1,0 +1,23 @@
+uuid: 9c426440-0c60-4df4-a36e-24ac75b37fe7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_share_this_page
+    - node.type.page
+id: node.page.field_share_this_page
+field_name: field_share_this_page
+entity_type: node
+bundle: page
+label: 'Share This Page'
+description: 'Display the Share This Page dropdown. Will be displayed to the right of the page title. If the page title is not present on the page, this will be displayed at the bottom of the page aligned to the right.'
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

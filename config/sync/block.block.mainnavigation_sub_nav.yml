@@ -1,0 +1,31 @@
+uuid: cad31daf-0c7d-4381-a54a-1072f8a33f9f
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - menu_block
+  theme:
+    - govt_yukon_rms
+id: mainnavigation_sub_nav
+theme: govt_yukon_rms
+region: sidebar
+weight: 0
+provider: null
+plugin: 'menu_block:main'
+settings:
+  id: 'menu_block:main'
+  label: 'Main Navigation - Sub Navigation'
+  label_display: '0'
+  provider: menu_block
+  follow: false
+  follow_parent: child
+  label_link: false
+  label_type: block
+  level: 2
+  depth: 4
+  expand_all_items: false
+  parent: 'main:'
+  suggestion: main
+visibility: {  }

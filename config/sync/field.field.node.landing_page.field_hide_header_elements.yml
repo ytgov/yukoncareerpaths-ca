@@ -1,0 +1,23 @@
+uuid: 8bd50d67-a46d-445c-80c3-7bb70bf67474
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hide_header_elements
+    - node.type.landing_page
+id: node.landing_page.field_hide_header_elements
+field_name: field_hide_header_elements
+entity_type: node
+bundle: landing_page
+label: 'Hide Header Elements'
+description: 'Hides the page header elements like the breadcrumbs and page title. Use this option if you want the page content closer to the site header.'
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

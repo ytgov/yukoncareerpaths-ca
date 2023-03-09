@@ -1,0 +1,15 @@
+uuid: 1f45a1b4-e2fb-451b-9e8c-1bea35c78212
+langcode: en
+status: true
+dependencies:
+  module:
+    - layout_paragraphs
+id: content_list_item
+label: 'Content List Item'
+icon_uuid: null
+icon_default: null
+description: 'Sub-Component: Display text along with an image.'
+behavior_plugins:
+  layout_paragraphs:
+    enabled: false
+    available_layouts: {  }

@@ -1,0 +1,23 @@
+uuid: 90f69d78-eab6-4999-88b1-4ec78f49301a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_link
+    - paragraphs.paragraphs_type.community_profiles
+  module:
+    - link
+id: paragraph.community_profiles.field_link
+field_name: field_link
+entity_type: paragraph
+bundle: community_profiles
+label: 'Bottom Button'
+description: 'Optional button that is displayed below the displayed Community Profiles.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 2
+  link_type: 17
+field_type: link

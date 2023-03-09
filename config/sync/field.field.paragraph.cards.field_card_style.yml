@@ -1,0 +1,23 @@
+uuid: b6126fe2-5b56-4227-ba29-b217e80bca68
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_card_style
+    - paragraphs.paragraphs_type.cards
+  module:
+    - options
+id: paragraph.cards.field_card_style
+field_name: field_card_style
+entity_type: paragraph
+bundle: cards
+label: 'Card Style'
+description: 'Changes the appearance of the cards.<br>Small: Displays the icon and text inline and in rows of 2.<br>Large: Displays the icon above the text and in rows of 3.'
+required: true
+translatable: true
+default_value:
+  -
+    value: large
+default_value_callback: ''
+settings: {  }
+field_type: list_string

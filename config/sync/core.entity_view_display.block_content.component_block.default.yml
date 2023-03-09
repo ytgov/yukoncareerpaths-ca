@@ -1,0 +1,25 @@
+uuid: 2301f04f-0893-4e45-a8fc-e92db9183fe6
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.component_block
+    - field.field.block_content.component_block.field_components
+  module:
+    - layout_paragraphs
+id: block_content.component_block.default
+targetEntityType: block_content
+bundle: component_block
+mode: default
+content:
+  field_components:
+    type: layout_paragraphs
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true

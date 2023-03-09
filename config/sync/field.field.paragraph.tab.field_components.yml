@@ -1,0 +1,107 @@
+uuid: dbf1c907-ee94-4833-b355-6a106927f661
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_components
+    - paragraphs.paragraphs_type.basic_content
+    - paragraphs.paragraphs_type.block_quote
+    - paragraphs.paragraphs_type.buttons
+    - paragraphs.paragraphs_type.cards
+    - paragraphs.paragraphs_type.content_list_item
+    - paragraphs.paragraphs_type.divider
+    - paragraphs.paragraphs_type.quick_facts
+    - paragraphs.paragraphs_type.spacer
+    - paragraphs.paragraphs_type.tab
+    - paragraphs.paragraphs_type.webform
+  module:
+    - entity_reference_revisions
+id: paragraph.tab.field_components
+field_name: field_components
+entity_type: paragraph
+bundle: tab
+label: 'Tab Components'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      basic_content: basic_content
+      block_quote: block_quote
+      buttons: buttons
+      cards: cards
+      content_list_item: content_list_item
+      divider: divider
+      spacer: spacer
+      quick_facts: quick_facts
+      webform: webform
+    negate: 0
+    target_bundles_drag_drop:
+      basic_content:
+        weight: -43
+        enabled: true
+      block_quote:
+        weight: -42
+        enabled: true
+      button:
+        weight: -41
+        enabled: false
+      buttons:
+        weight: -40
+        enabled: true
+      card:
+        weight: -39
+        enabled: false
+      cards:
+        weight: -38
+        enabled: true
+      career_profiles:
+        weight: -32
+        enabled: false
+      carousel:
+        weight: -37
+        enabled: false
+      carousel_slide:
+        weight: -36
+        enabled: false
+      community_profiles:
+        weight: -28
+        enabled: false
+      content_list:
+        weight: -35
+        enabled: false
+      content_list_item:
+        weight: -34
+        enabled: true
+      divider:
+        weight: -33
+        enabled: true
+      page_section:
+        weight: -31
+        enabled: false
+      quick_facts:
+        weight: -26
+        enabled: true
+      quick_facts_item:
+        weight: -24
+        enabled: false
+      section:
+        weight: -30
+        enabled: false
+      spacer:
+        weight: -29
+        enabled: true
+      tab:
+        weight: -27
+        enabled: false
+      tabs:
+        weight: -23
+        enabled: false
+      webform:
+        weight: -25
+        enabled: true
+field_type: entity_reference_revisions
