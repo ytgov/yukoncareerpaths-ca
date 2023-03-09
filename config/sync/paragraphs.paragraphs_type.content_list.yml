@@ -2,14 +2,11 @@ uuid: a9807e0d-008a-4f12-9b26-c4cc662c9eea
 langcode: en
 status: true
 dependencies:
-  module:
-    - layout_paragraphs
+  content:
+    - 'file:file:ae7533de-a2f4-4e2b-9edb-f82bde906ae3'
 id: content_list
 label: 'Content List'
-icon_uuid: null
-icon_default: null
+icon_uuid: ae7533de-a2f4-4e2b-9edb-f82bde906ae3
+icon_default: 'data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIGlkPSJJY29ucyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgMjggMjYiPjxkZWZzPjxzdHlsZT4uY2xzLTF7ZmlsbDpub25lO3N0cm9rZTojMDAwO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2Utd2lkdGg6MnB4O308L3N0eWxlPjwvZGVmcz48bGluZSBjbGFzcz0iY2xzLTEiIHgxPSIyMCIgeTE9IjEiIHgyPSIyNyIgeTI9IjEiLz48bGluZSBjbGFzcz0iY2xzLTEiIHgxPSIyMCIgeTE9IjciIHgyPSIyNyIgeTI9IjciLz48bGluZSBjbGFzcz0iY2xzLTEiIHgxPSIyMCIgeTE9IjEzIiB4Mj0iMjciIHkyPSIxMyIvPjxsaW5lIGNsYXNzPSJjbHMtMSIgeDE9IjEiIHkxPSIxOSIgeDI9IjI3IiB5Mj0iMTkiLz48bGluZSBjbGFzcz0iY2xzLTEiIHgxPSIxIiB5MT0iMjUiIHgyPSIyNyIgeTI9IjI1Ii8+PHJlY3QgY2xhc3M9ImNscy0xIiB4PSIxIiB5PSIxIiB3aWR0aD0iMTMiIGhlaWdodD0iMTIiLz48cG9seWxpbmUgY2xhc3M9ImNscy0xIiBwb2ludHM9IjEgMTEgNiA3IDEwIDEwIDE0IDciLz48Y2lyY2xlIGNsYXNzPSJjbHMtMSIgY3g9IjEwIiBjeT0iNSIgcj0iMSIvPjwvc3ZnPg=='
 description: 'Component: Display a list of content (text and images) using the Content List Item components.'
-behavior_plugins:
-  layout_paragraphs:
-    enabled: false
-    available_layouts: {  }
+behavior_plugins: {  }

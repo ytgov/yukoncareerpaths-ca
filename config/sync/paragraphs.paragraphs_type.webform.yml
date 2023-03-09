@@ -2,14 +2,11 @@ uuid: 00b424b2-bf2c-4f1c-932b-e40e04793b8c
 langcode: en
 status: true
 dependencies:
-  module:
-    - layout_paragraphs
+  content:
+    - 'file:file:5ffa26d7-f433-4abb-b07c-97ff84d60761'
 id: webform
 label: Webform
-icon_uuid: null
-icon_default: null
+icon_uuid: 5ffa26d7-f433-4abb-b07c-97ff84d60761
+icon_default: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48IS0tIEZvbnQgQXdlc29tZSBQcm8gNS4xNS40IGJ5IEBmb250YXdlc29tZSAtIGh0dHBzOi8vZm9udGF3ZXNvbWUuY29tIExpY2Vuc2UgLSBodHRwczovL2ZvbnRhd2Vzb21lLmNvbS9saWNlbnNlIChDb21tZXJjaWFsIExpY2Vuc2UpIC0tPjxwYXRoIGQ9Ik00NDggMEg2NEMyOC43IDAgMCAyOC43IDAgNjR2Mjg4YzAgMzUuMyAyOC43IDY0IDY0IDY0aDk2djg0YzAgNy4xIDUuOCAxMiAxMiAxMiAyLjQgMCA0LjktLjcgNy4xLTIuNEwzMDQgNDE2aDE0NGMzNS4zIDAgNjQtMjguNyA2NC02NFY2NGMwLTM1LjMtMjguNy02NC02NC02NHptMTYgMzUyYzAgOC44LTcuMiAxNi0xNiAxNkgyODhsLTEyLjggOS42TDIwOCA0Mjh2LTYwSDY0Yy04LjggMC0xNi03LjItMTYtMTZWNjRjMC04LjggNy4yLTE2IDE2LTE2aDM4NGM4LjggMCAxNiA3LjIgMTYgMTZ2Mjg4em0tOTYtMjE2SDE0NGMtOC44IDAtMTYgNy4yLTE2IDE2djE2YzAgOC44IDcuMiAxNiAxNiAxNmgyMjRjOC44IDAgMTYtNy4yIDE2LTE2di0xNmMwLTguOC03LjItMTYtMTYtMTZ6bS05NiA5NkgxNDRjLTguOCAwLTE2IDcuMi0xNiAxNnYxNmMwIDguOCA3LjIgMTYgMTYgMTZoMTI4YzguOCAwIDE2LTcuMiAxNi0xNnYtMTZjMC04LjgtNy4yLTE2LTE2LTE2eiIvPjwvc3ZnPg=='
 description: 'Component: Display a Drupal Webform.'
-behavior_plugins:
-  layout_paragraphs:
-    enabled: false
-    available_layouts: {  }
+behavior_plugins: {  }

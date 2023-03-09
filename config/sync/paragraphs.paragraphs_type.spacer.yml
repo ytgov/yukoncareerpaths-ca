@@ -2,14 +2,11 @@ uuid: c8360c22-0ff3-498d-bde8-c20657a4a793
 langcode: en
 status: true
 dependencies:
-  module:
-    - layout_paragraphs
+  content:
+    - 'file:file:c8bfd41d-8ac7-464f-9d09-984f8e682daa'
 id: spacer
 label: Spacer
-icon_uuid: null
-icon_default: null
+icon_uuid: c8bfd41d-8ac7-464f-9d09-984f8e682daa
+icon_default: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDI0IDI0IiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCI+PHJlY3QgZmlsbD0ibm9uZSIgaGVpZ2h0PSIyNCIgd2lkdGg9IjI0Ii8+PHBhdGggZD0iTTIyLDJ2MkgyVjJIMjJ6IE03LDEwLjV2M2gxMHYtM0g3eiBNMiwyMHYyaDIwdi0ySDJ6Ii8+PC9zdmc+'
 description: 'Component: Create empty space between components.'
-behavior_plugins:
-  layout_paragraphs:
-    enabled: false
-    available_layouts: {  }
+behavior_plugins: {  }

@@ -2,12 +2,14 @@ uuid: 5133b50b-e231-43a4-ba0a-b021e3ea1915
 langcode: en
 status: true
 dependencies:
+  content:
+    - 'file:file:481502e0-ff45-45c3-ac04-11561f83cdba'
   module:
     - layout_paragraphs
 id: section
 label: Section
-icon_uuid: null
-icon_default: null
+icon_uuid: 481502e0-ff45-45c3-ac04-11561f83cdba
+icon_default: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDI0IDI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIGZpbGw9ImJsYWNrIiB3aWR0aD0iMjRweCIgaGVpZ2h0PSIyNHB4Ij48Zz48cmVjdCBmaWxsPSJub25lIiBoZWlnaHQ9IjI0IiB3aWR0aD0iMjQiLz48cGF0aCBkPSJNMTcsNWgtMlYzaDJWNXogTTE1LDE1djZsMi4yOS0yLjI5TDE5LjU5LDIxTDIxLDE5LjU5bC0yLjI5LTIuMjlMMjEsMTVIMTV6IE0xOSw5aDJWN2gtMlY5eiBNMTksMTNoMnYtMmgtMlYxM3ogTTExLDIxaDIgdi0yaC0yVjIxeiBNNyw1aDJWM0g3VjV6IE0zLDE3aDJ2LTJIM1YxN3ogTTUsMjF2LTJIM0MzLDIwLjEsMy45LDIxLDUsMjF6IE0xOSwzdjJoMkMyMSwzLjksMjAuMSwzLDE5LDN6IE0xMSw1aDJWM2gtMlY1eiBNMyw5aDIgVjdIM1Y5eiBNNywyMWgydi0ySDdWMjF6IE0zLDEzaDJ2LTJIM1YxM3ogTTMsNWgyVjNDMy45LDMsMywzLjksMyw1eiIvPjwvZz48L3N2Zz4='
 description: 'Layout Component: A section used for layouts.'
 behavior_plugins:
   layout_paragraphs:

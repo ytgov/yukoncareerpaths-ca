@@ -6,9 +6,9 @@ name: 'Recruitment Marketing'
 mail: pdelorme+govyukon@acromedia.com
 slogan: ''
 page:
-  403: ''
-  404: ''
-  front: /node
+  403: /node/9
+  404: /node/10
+  front: /node/1
 admin_compact_mode: false
 weight_select_max: 100
 default_langcode: en
