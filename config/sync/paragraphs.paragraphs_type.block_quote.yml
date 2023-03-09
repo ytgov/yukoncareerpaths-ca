@@ -1,0 +1,15 @@
+uuid: 6aea2406-a626-4e32-86fb-52360b2990f3
+langcode: en
+status: true
+dependencies:
+  module:
+    - layout_paragraphs
+id: block_quote
+label: 'Block Quote'
+icon_uuid: null
+icon_default: null
+description: 'Component: Display a quote in a block format.'
+behavior_plugins:
+  layout_paragraphs:
+    enabled: false
+    available_layouts: {  }

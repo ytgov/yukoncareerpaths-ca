@@ -1,0 +1,23 @@
+uuid: 0180f20b-51de-4334-a8f1-a13ea47385c5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_margin_bottom
+    - paragraphs.paragraphs_type.divider
+id: paragraph.divider.field_margin_bottom
+field_name: field_margin_bottom
+entity_type: paragraph
+bundle: divider
+label: 'Margin Bottom'
+description: 'Optional custom bottom margin value in pixels. Creates empty space below this component.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: px
+field_type: integer

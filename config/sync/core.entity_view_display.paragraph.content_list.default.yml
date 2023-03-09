@@ -1,0 +1,26 @@
+uuid: 9225ef3f-8d5d-4411-844d-581ed5d3d6f9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.content_list.field_content_list_items
+    - field.field.paragraph.content_list.field_content_list_style
+    - paragraphs.paragraphs_type.content_list
+  module:
+    - entity_reference_revisions
+id: paragraph.content_list.default
+targetEntityType: paragraph
+bundle: content_list
+mode: default
+content:
+  field_content_list_items:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_content_list_style: true

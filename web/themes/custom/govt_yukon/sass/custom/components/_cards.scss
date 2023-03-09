@@ -122,6 +122,18 @@
 }
 
 //
+// Variation: Image.
+//
+
+.comp-card--image {
+  padding: 0;
+
+  .comp-card__text {
+    padding: rem(20px 20px 45px 20px);
+  }
+}
+
+//
 // Style: Small.
 //
 

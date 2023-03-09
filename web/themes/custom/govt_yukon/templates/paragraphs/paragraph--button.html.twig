@@ -62,11 +62,18 @@
   {% set button_has_icon = true %}
 {% endif %}
 
+{# If button is an external link. #}
+{% set link_is_external = false %}
+{% if paragraph.field_external_link.value %}
+  {% set link_is_external = true %}
+{% endif %}
+
 {%
   set classes = [
     component_prefix,
     button_style,
-    button_has_icon ? component_prefix ~ '--has-icon'
+    button_has_icon ? component_prefix ~ '--has-icon',
+    link_is_external ? component_prefix ~ '--is-external'
   ]
 %}
 {% block paragraph %}

@@ -70,7 +70,7 @@
               </div>
               <div class="site-header__primary-content">
                 {% if page.language_switcher %}
-                  <div class="site-header__language-switcher comp-language-switcher">
+                  <div class="site-header__language-switcher">
                     {{ page.language_switcher }}
                   </div>
                 {% endif %}
@@ -134,6 +134,7 @@
 
 {% block page_body %}
   {% set site_content_attributes = create_attribute() %}
+  {% set page_accent = false %}
 
   {#
   Render sidebars to check if it is truly empty.

@@ -16,8 +16,8 @@ content:
     type: svg_image_field_formatter
     label: visually_hidden
     settings:
-      inline: false
-      apply_dimensions: true
+      inline: true
+      apply_dimensions: false
       width: 25
       height: 25
       enable_alt: true

@@ -26,6 +26,7 @@ dependencies:
     - media
     - menu_link_content
     - node
+    - paragraphs
     - path
     - system
     - taxonomy
@@ -75,6 +76,7 @@ permissions:
   - 'delete terms in departments'
   - 'delete terms in job_types'
   - 'delete terms in locations'
+  - 'edit behavior plugin settings'
   - 'edit own career_profile content'
   - 'edit own community_profile content'
   - 'edit own document media'
@@ -103,6 +105,8 @@ permissions:
   - 'translate locations taxonomy_term'
   - 'translate menu_link_content'
   - 'translate page node'
+  - 'translate paragraph'
+  - 'translate remote_video media'
   - 'translate svg media'
   - 'update content translations'
   - 'update media'
@@ -115,3 +119,4 @@ permissions:
   - 'view own unpublished content'
   - 'view page revisions'
   - 'view the administration theme'
+  - 'view unpublished paragraphs'

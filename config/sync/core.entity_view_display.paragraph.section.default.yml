@@ -1,0 +1,16 @@
+uuid: f506aae2-070f-45a6-9a7e-5b59dc120f1f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.section.field_container_full_width
+    - field.field.paragraph.section.field_disable_gutters
+    - paragraphs.paragraphs_type.section
+id: paragraph.section.default
+targetEntityType: paragraph
+bundle: section
+mode: default
+content: {  }
+hidden:
+  field_container_full_width: true
+  field_disable_gutters: true

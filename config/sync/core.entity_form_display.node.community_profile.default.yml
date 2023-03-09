@@ -3,40 +3,89 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.community_profile.body
+    - field.field.node.community_profile.field_components
     - field.field.node.community_profile.field_image
+    - field.field.node.community_profile.field_page_banner
+    - field.field.node.community_profile.field_share_this_page
     - node.type.community_profile
   module:
+    - field_group
+    - layout_paragraphs
     - media_library
     - path
-    - text
+third_party_settings:
+  field_group:
+    group_display_options:
+      children:
+        - field_share_this_page
+      label: 'Display Options'
+      region: content
+      parent_name: ''
+      weight: 11
+      format_type: details
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        open: false
+        description: ''
+        required_fields: true
+    group_page_banner:
+      children:
+        - field_page_banner
+      label: 'Page Banner'
+      region: content
+      parent_name: ''
+      weight: 12
+      format_type: details
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        open: false
+        description: ''
+        required_fields: true
 id: node.community_profile.default
 targetEntityType: node
 bundle: community_profile
 mode: default
 content:
-  body:
-    type: text_textarea_with_summary
-    weight: 9
-    region: content
-    settings:
-      rows: 9
-      summary_rows: 3
-      placeholder: ''
-      show_summary: false
-    third_party_settings: {  }
   created:
     type: datetime_timestamp
     weight: 3
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_components:
+    type: layout_paragraphs
+    weight: 14
+    region: content
+    settings:
+      preview_view_mode: default
+      nesting_depth: 0
+      require_layouts: 1
+      empty_message: ''
+    third_party_settings: {  }
   field_image:
     type: media_library_widget
-    weight: 8
+    weight: 13
     region: content
     settings:
       media_types: {  }
+    third_party_settings: {  }
+  field_page_banner:
+    type: media_library_widget
+    weight: 15
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_share_this_page:
+    type: boolean_checkbox
+    weight: 14
+    region: content
+    settings:
+      display_label: true
     third_party_settings: {  }
   langcode:
     type: language_select
@@ -57,6 +106,11 @@ content:
     region: content
     settings:
       display_label: true
+    third_party_settings: {  }
+  simple_sitemap:
+    weight: 8
+    region: content
+    settings: {  }
     third_party_settings: {  }
   status:
     type: boolean_checkbox
@@ -81,7 +135,7 @@ content:
       placeholder: ''
     third_party_settings: {  }
   translation:
-    weight: 10
+    weight: 9
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -94,5 +148,10 @@ content:
       match_limit: 10
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  url_redirects:
+    weight: 10
+    region: content
+    settings: {  }
     third_party_settings: {  }
 hidden: {  }

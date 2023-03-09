@@ -1,0 +1,55 @@
+uuid: d153b0fc-2e02-4192-bdba-951b7db2e7bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.card.field_color
+    - field.field.paragraph.card.field_font_awesome_icon
+    - field.field.paragraph.card.field_icon_image
+    - field.field.paragraph.card.field_image
+    - field.field.paragraph.card.field_link
+    - image.style.card_image
+    - paragraphs.paragraphs_type.card
+  module:
+    - link
+    - media
+id: paragraph.card.default
+targetEntityType: paragraph
+bundle: card
+mode: default
+content:
+  field_icon_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_image:
+    type: media_thumbnail
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: card_image
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_link:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  field_color: true
+  field_font_awesome_icon: true

@@ -1,0 +1,29 @@
+uuid: 2a051f8b-27ce-4410-813b-9760011fe803
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_background_image
+    - media.type.image
+    - paragraphs.paragraphs_type.carousel_slide
+id: paragraph.carousel_slide.field_background_image
+field_name: field_background_image
+entity_type: paragraph
+bundle: carousel_slide
+label: 'Background Image'
+description: 'Choose a dark background image so the text that is displayed over the image is clearly legible.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

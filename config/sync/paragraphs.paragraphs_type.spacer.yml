@@ -1,0 +1,15 @@
+uuid: c8360c22-0ff3-498d-bde8-c20657a4a793
+langcode: en
+status: true
+dependencies:
+  module:
+    - layout_paragraphs
+id: spacer
+label: Spacer
+icon_uuid: null
+icon_default: null
+description: 'Component: Create empty space between components.'
+behavior_plugins:
+  layout_paragraphs:
+    enabled: false
+    available_layouts: {  }

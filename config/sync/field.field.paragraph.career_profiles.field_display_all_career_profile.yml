@@ -1,0 +1,23 @@
+uuid: e3377cca-eb4f-4191-a20a-6ef20bb7ec7b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_display_all_career_profile
+    - paragraphs.paragraphs_type.career_profiles
+id: paragraph.career_profiles.field_display_all_career_profile
+field_name: field_display_all_career_profile
+entity_type: paragraph
+bundle: career_profiles
+label: 'Display all Career Profiles'
+description: 'If selected, will override the above selected Career Profiles and display a listing of all the Career Profiles (with pagination if necessary).'
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

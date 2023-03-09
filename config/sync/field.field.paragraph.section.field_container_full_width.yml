@@ -1,0 +1,23 @@
+uuid: 561f4f01-b70d-4bd9-a423-51e766dc1338
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_container_full_width
+    - paragraphs.paragraphs_type.section
+id: paragraph.section.field_container_full_width
+field_name: field_container_full_width
+entity_type: paragraph
+bundle: section
+label: 'Display Container Full Width'
+description: 'Display the section container full width (100% of the screen). Useful for when you want components to span edge-to-edge of the screen (like a Carousel or CTA Strap etc.).'
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,23 @@
+uuid: 83bfac56-f401-4c1f-b7e0-76a132f3d816
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_disable_page_top_margin
+    - node.type.page
+id: node.page.field_disable_page_top_margin
+field_name: field_disable_page_top_margin
+entity_type: node
+bundle: page
+label: 'Disable Page Top Margin'
+description: 'Remove the page top margin to eliminate the space between the site header and the page content. Useful if you want page elements to sit flush with the bottom of the site header.'
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -69,6 +69,9 @@
 // Nodes.
 @import 'nodes/page';
 
+// Layouts.
+@import 'layouts/layouts';
+
 // Pages.
 @import 'pages/maintenance-page';
 @import 'pages/page-structure';
@@ -76,3 +79,6 @@
 
 // Taxonomy Terms.
 @import 'taxonomy-terms/area-categories';
+
+// Views.
+@import 'views/infinite-scroll';

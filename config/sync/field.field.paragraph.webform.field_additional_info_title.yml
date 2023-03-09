@@ -1,0 +1,19 @@
+uuid: 0db488ca-c458-43fd-9cb5-9c4b385552c2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_additional_info_title
+    - paragraphs.paragraphs_type.webform
+id: paragraph.webform.field_additional_info_title
+field_name: field_additional_info_title
+entity_type: paragraph
+bundle: webform
+label: 'Additional Information Title'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

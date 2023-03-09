@@ -1,0 +1,23 @@
+uuid: 229d6e66-c953-4c7f-9420-4bf777483b00
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_disable_gutters
+    - paragraphs.paragraphs_type.section
+id: paragraph.section.field_disable_gutters
+field_name: field_disable_gutters
+entity_type: paragraph
+bundle: section
+label: 'Disable Gutters'
+description: 'Remove padding to the left and right of the content area. This is useful for when edge-to-edge content is required.'
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

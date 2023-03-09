@@ -1,0 +1,20 @@
+uuid: 1e0e5335-10a6-443a-9760-33c5e15aa1c8
+langcode: en
+status: true
+dependencies:
+  module:
+    - layout_paragraphs
+id: page_section
+label: 'Page Section'
+icon_uuid: null
+icon_default: null
+description: 'Layout Component: A section used when nested within a container. Usually used for layouts within content pages that contain sidebars etc.'
+behavior_plugins:
+  layout_paragraphs:
+    enabled: true
+    available_layouts:
+      nested_one_column: '1 column'
+      nested_two_column: '2 column'
+      nested_two_column_42_58: '2 column (42% / 58%)'
+      nested_two_column_58_42: '2 column (58% / 42%)'
+      nested_three_column: '3 column'

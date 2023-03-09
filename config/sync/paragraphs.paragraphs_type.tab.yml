@@ -1,0 +1,15 @@
+uuid: f36e3343-b421-4780-baad-592358629373
+langcode: en
+status: true
+dependencies:
+  module:
+    - layout_paragraphs
+id: tab
+label: Tab
+icon_uuid: null
+icon_default: null
+description: 'Sub-Component: The actual tab that appears within the Tabs component.'
+behavior_plugins:
+  layout_paragraphs:
+    enabled: false
+    available_layouts: {  }

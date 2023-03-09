@@ -1,0 +1,31 @@
+uuid: 4c04b96a-812f-4b88-af9c-ca0a6f73616d
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.header
+  module:
+    - menu_block
+  theme:
+    - govt_yukon_rms
+id: headernavigation
+theme: govt_yukon_rms
+region: language_switcher
+weight: 0
+provider: null
+plugin: 'menu_block:header'
+settings:
+  id: 'menu_block:header'
+  label: 'Header Navigation'
+  label_display: '0'
+  provider: menu_block
+  follow: false
+  follow_parent: child
+  label_link: false
+  label_type: block
+  level: 1
+  depth: 1
+  expand_all_items: false
+  parent: 'header:'
+  suggestion: header
+visibility: {  }

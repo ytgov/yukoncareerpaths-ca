@@ -1,0 +1,45 @@
+uuid: cd2f4989-d75f-4861-afde-fec0728c7a3d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.quick_facts.field_quick_facts_items
+    - field.field.paragraph.quick_facts.field_title
+    - paragraphs.paragraphs_type.quick_facts
+  module:
+    - paragraphs
+id: paragraph.quick_facts.default
+targetEntityType: paragraph
+bundle: quick_facts
+mode: default
+content:
+  field_quick_facts_items:
+    type: paragraphs
+    weight: 1
+    region: content
+    settings:
+      title: 'Quick Facts Item'
+      title_plural: 'Quick Facts Items'
+      edit_mode: closed
+      closed_mode: summary
+      autocollapse: all
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: quick_facts_item
+      features:
+        add_above: '0'
+        collapse_edit_all: '0'
+        duplicate: '0'
+    third_party_settings: {  }
+  field_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,22 @@
+uuid: 3ed2dc0b-f34a-4528-8c1d-42b1254552e4
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: career_profiles
+label: 'Career Profiles'
+type: 'canonical_entities:node'
+pattern: 'career-profiles/[node:title]'
+selection_criteria:
+  069d680c-7da3-43a5-babd-a4e286a98a01:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 069d680c-7da3-43a5-babd-a4e286a98a01
+    context_mapping:
+      node: node
+    bundles:
+      career_profile: career_profile
+selection_logic: and
+weight: -5
+relationships: {  }

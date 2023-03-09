@@ -1,0 +1,33 @@
+uuid: 5ac980cc-748f-428a-b10b-2f4b096535fa
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.divider.field_margin_bottom
+    - field.field.paragraph.divider.field_margin_top
+    - paragraphs.paragraphs_type.divider
+id: paragraph.divider.preview
+targetEntityType: paragraph
+bundle: divider
+mode: preview
+content:
+  field_margin_bottom:
+    type: number_integer
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_margin_top:
+    type: number_integer
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

@@ -1,0 +1,15 @@
+uuid: b927c54b-4185-41e3-963c-86b7c4a3fa51
+langcode: en
+status: true
+dependencies:
+  module:
+    - layout_paragraphs
+id: carousel_slide
+label: 'Carousel Slide'
+icon_uuid: null
+icon_default: null
+description: 'Sub-Component: A slide that is displayed within the Carousel component.'
+behavior_plugins:
+  layout_paragraphs:
+    enabled: false
+    available_layouts: {  }

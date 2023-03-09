@@ -1,0 +1,15 @@
+uuid: 7bfdaa9e-71fe-4621-bbba-43a29dfc00b5
+langcode: en
+status: true
+dependencies: {  }
+name: resource
+label: 'Resource (333×431)'
+effects:
+  5c7220f6-5ef7-4d42-b200-3434aab4ef2c:
+    uuid: 5c7220f6-5ef7-4d42-b200-3434aab4ef2c
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 333
+      height: 431
+      anchor: center-center

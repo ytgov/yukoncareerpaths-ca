@@ -1,0 +1,113 @@
+uuid: f65f4cd7-259c-4307-a9d4-6916190053b8
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.section_block
+    - field.storage.block_content.field_components
+    - paragraphs.paragraphs_type.basic_content
+    - paragraphs.paragraphs_type.block_quote
+    - paragraphs.paragraphs_type.buttons
+    - paragraphs.paragraphs_type.cards
+    - paragraphs.paragraphs_type.carousel
+    - paragraphs.paragraphs_type.content_list
+    - paragraphs.paragraphs_type.divider
+    - paragraphs.paragraphs_type.quick_facts
+    - paragraphs.paragraphs_type.section
+    - paragraphs.paragraphs_type.spacer
+    - paragraphs.paragraphs_type.tabs
+    - paragraphs.paragraphs_type.webform
+  module:
+    - entity_reference_revisions
+id: block_content.section_block.field_components
+field_name: field_components
+entity_type: block_content
+bundle: section_block
+label: Components
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      basic_content: basic_content
+      block_quote: block_quote
+      buttons: buttons
+      cards: cards
+      carousel: carousel
+      content_list: content_list
+      divider: divider
+      section: section
+      spacer: spacer
+      tabs: tabs
+      webform: webform
+      quick_facts: quick_facts
+    negate: 0
+    target_bundles_drag_drop:
+      basic_content:
+        weight: 18
+        enabled: true
+      block_quote:
+        weight: 19
+        enabled: true
+      button:
+        weight: 20
+        enabled: false
+      buttons:
+        weight: 21
+        enabled: true
+      card:
+        weight: 22
+        enabled: false
+      cards:
+        weight: 23
+        enabled: true
+      career_profiles:
+        weight: 28
+        enabled: false
+      carousel:
+        weight: 24
+        enabled: true
+      carousel_slide:
+        weight: 25
+        enabled: false
+      community_profiles:
+        weight: 31
+        enabled: false
+      content_list:
+        weight: 26
+        enabled: true
+      content_list_item:
+        weight: 27
+        enabled: false
+      divider:
+        weight: 28
+        enabled: true
+      page_section:
+        weight: 29
+        enabled: false
+      quick_facts:
+        weight: 36
+        enabled: true
+      quick_facts_item:
+        weight: 37
+        enabled: false
+      section:
+        weight: 30
+        enabled: true
+      spacer:
+        weight: 31
+        enabled: true
+      tab:
+        weight: 32
+        enabled: false
+      tabs:
+        weight: 33
+        enabled: true
+      webform:
+        weight: 34
+        enabled: true
+field_type: entity_reference_revisions

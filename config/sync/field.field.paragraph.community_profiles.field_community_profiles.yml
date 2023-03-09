@@ -1,0 +1,29 @@
+uuid: fee91418-1923-47c7-94a4-ab9e4f8c6873
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_community_profiles
+    - node.type.community_profile
+    - paragraphs.paragraphs_type.community_profiles
+id: paragraph.community_profiles.field_community_profiles
+field_name: field_community_profiles
+entity_type: paragraph
+bundle: community_profiles
+label: 'Community Profiles'
+description: 'Choose the Community Profiles you want displayed.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      community_profile: community_profile
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

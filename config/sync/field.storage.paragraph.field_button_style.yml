@@ -1,0 +1,30 @@
+uuid: 1d34d82e-74ec-45d4-9027-0af2bac3f115
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_button_style
+field_name: field_button_style
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: primary
+      label: Primary
+    -
+      value: secondary
+      label: Secondary
+    -
+      value: text_link
+      label: 'Text Link'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

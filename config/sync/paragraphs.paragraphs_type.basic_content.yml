@@ -1,0 +1,15 @@
+uuid: d1355cae-bcdf-4157-aa30-4626dbae892a
+langcode: en
+status: true
+dependencies:
+  module:
+    - layout_paragraphs
+id: basic_content
+label: 'Basic Content'
+icon_uuid: null
+icon_default: null
+description: 'Component: Common HTML content like text and images.'
+behavior_plugins:
+  layout_paragraphs:
+    enabled: false
+    available_layouts: {  }

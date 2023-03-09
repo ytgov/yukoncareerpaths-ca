@@ -1,0 +1,15 @@
+uuid: 5fc807db-f356-4698-a360-df1542d481b2
+langcode: en
+status: true
+dependencies:
+  module:
+    - layout_paragraphs
+id: cards
+label: Cards
+icon_uuid: null
+icon_default: null
+description: 'Component: Display a list of Card components.'
+behavior_plugins:
+  layout_paragraphs:
+    enabled: false
+    available_layouts: {  }

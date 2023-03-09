@@ -166,3 +166,12 @@ comp-site-search:
     - core/drupal
     - core/once
     - core/jquery
+comp-page-banner:
+  version: VERSION
+  js:
+    js/custom/components/page-banner.js: {}
+  dependencies:
+    - core/drupal
+    - core/once
+    - core/jquery
+    - govt_yukon/slick

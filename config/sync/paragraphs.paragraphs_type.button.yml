@@ -1,0 +1,15 @@
+uuid: b7f4d809-f445-412e-a599-064c9b99a98b
+langcode: en
+status: true
+dependencies:
+  module:
+    - layout_paragraphs
+id: button
+label: Button
+icon_uuid: null
+icon_default: null
+description: 'Sub-Component: Display a button.'
+behavior_plugins:
+  layout_paragraphs:
+    enabled: false
+    available_layouts: {  }

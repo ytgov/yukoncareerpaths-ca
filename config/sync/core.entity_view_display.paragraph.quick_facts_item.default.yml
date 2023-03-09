@@ -1,0 +1,36 @@
+uuid: fa446424-3b61-4093-82e6-1b8a99baf668
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.quick_facts_item.field_body
+    - field.field.paragraph.quick_facts_item.field_link
+    - paragraphs.paragraphs_type.quick_facts_item
+  module:
+    - link
+    - text
+id: paragraph.quick_facts_item.default
+targetEntityType: paragraph
+bundle: quick_facts_item
+mode: default
+content:
+  field_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_link:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

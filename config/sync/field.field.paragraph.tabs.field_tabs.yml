@@ -1,0 +1,79 @@
+uuid: e9f354e7-ccee-48d4-b806-ce0bf59adc84
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_tabs
+    - paragraphs.paragraphs_type.tab
+    - paragraphs.paragraphs_type.tabs
+  module:
+    - entity_reference_revisions
+id: paragraph.tabs.field_tabs
+field_name: field_tabs
+entity_type: paragraph
+bundle: tabs
+label: Tabs
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      tab: tab
+    negate: 0
+    target_bundles_drag_drop:
+      basic_content:
+        weight: 18
+        enabled: false
+      block_quote:
+        weight: 19
+        enabled: false
+      button:
+        weight: 20
+        enabled: false
+      buttons:
+        weight: 21
+        enabled: false
+      card:
+        weight: 22
+        enabled: false
+      cards:
+        weight: 23
+        enabled: false
+      carousel:
+        weight: 24
+        enabled: false
+      carousel_slide:
+        weight: 25
+        enabled: false
+      content_list:
+        weight: 26
+        enabled: false
+      content_list_item:
+        weight: 27
+        enabled: false
+      divider:
+        weight: 28
+        enabled: false
+      page_section:
+        weight: 29
+        enabled: false
+      section:
+        weight: 30
+        enabled: false
+      spacer:
+        weight: 31
+        enabled: false
+      tab:
+        weight: 32
+        enabled: true
+      tabs:
+        weight: 33
+        enabled: false
+      webform:
+        weight: 34
+        enabled: false
+field_type: entity_reference_revisions

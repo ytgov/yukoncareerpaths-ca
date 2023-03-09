@@ -1,0 +1,44 @@
+uuid: 641f9c4a-0fa9-4e3b-ba83-aad651af6372
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.career_profiles.field_career_profiles
+    - field.field.paragraph.career_profiles.field_display_all_career_profile
+    - field.field.paragraph.career_profiles.field_link
+    - paragraphs.paragraphs_type.career_profiles
+  module:
+    - link
+id: paragraph.career_profiles.default
+targetEntityType: paragraph
+bundle: career_profiles
+mode: default
+content:
+  field_career_profiles:
+    type: entity_reference_autocomplete
+    weight: 0
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_display_all_career_profile:
+    type: boolean_checkbox
+    weight: 1
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_link:
+    type: link_default
+    weight: 2
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

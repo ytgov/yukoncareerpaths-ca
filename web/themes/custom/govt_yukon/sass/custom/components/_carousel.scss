@@ -29,7 +29,7 @@
   .slick-prev .slick-prev-icon,
   .slick-prev:focus .slick-prev-icon {
     margin: 0;
-    font-size: rem(52px);
+    font-size: rem(45px);
     line-height: 1;
     opacity: 1;
   }
@@ -44,7 +44,7 @@
       &::before {
         @extend %fa-icon;
         @extend .far;
-        content: fa-content($fa-var-chevron-left);
+        content: fa-content($fa-var-angle-left);
       }
     }
 
@@ -56,7 +56,7 @@
   .slick-next .slick-next-icon,
   .slick-next:focus .slick-next-icon {
     margin: 0;
-    font-size: rem(52px);
+    font-size: rem(45px);
     line-height: 1;
     opacity: 1;
   }
@@ -71,7 +71,7 @@
       &::before {
         @extend %fa-icon;
         @extend .far;
-        content: fa-content($fa-var-chevron-right);
+        content: fa-content($fa-var-angle-right);
       }
     }
 

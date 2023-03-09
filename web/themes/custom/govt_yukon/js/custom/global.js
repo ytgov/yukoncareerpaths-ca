@@ -8,15 +8,6 @@
 
   Drupal.govt_yukon_main = {};
 
-  // External Links - Open in a new window.
-  $("a[href^='http']").each(function () {
-    var re_matches = /https?:\/\/([^\/]*)/.exec($(this).attr('href'));
-    // Check link against the current domain.
-    if(re_matches && re_matches[1] && re_matches[1] != location.hostname && re_matches[1] != 'www.'+location.hostname && 'www.'+re_matches[1] != location.hostname) {
-      $(this).attr('target', '_blank');
-    }
-  });
-
   // Collapsible Navigation.
   function collapsibleNav (menu) {
     menu.addClass('menu--collapsible');

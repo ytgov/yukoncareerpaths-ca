@@ -1,0 +1,52 @@
+uuid: 680146e5-df90-480d-a8a1-ae695a93532f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.block_quote.field_body
+    - field.field.paragraph.block_quote.field_quote_alignment
+    - field.field.paragraph.block_quote.field_quote_author
+    - field.field.paragraph.block_quote.field_quote_background_color
+    - paragraphs.paragraphs_type.block_quote
+  module:
+    - color_field
+    - text
+id: paragraph.block_quote.default
+targetEntityType: paragraph
+bundle: block_quote
+mode: default
+content:
+  field_body:
+    type: text_textarea_with_summary
+    weight: 0
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  field_quote_alignment:
+    type: options_select
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_quote_author:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_quote_background_color:
+    type: color_field_widget_box
+    weight: 3
+    region: content
+    settings:
+      default_colors: '#244c5a,#0097a9,#512a44,#7a9a01,#dc4405,#000000'
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

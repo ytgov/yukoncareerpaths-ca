@@ -51,6 +51,26 @@
     {
       "from": "../govt_yukon/templates/content/node--resource.html.twig",
       "to": "templates/content/node--resource.html.twig"
+    },
+    {
+      "from": "../govt_yukon_rms/images/*",
+      "to": "images/"
+    },
+    {
+      "from": "../govt_yukon_rms/templates/paragraphs",
+      "to": "templates/"
+    },
+    {
+      "from": "../govt_yukon_rms/templates/field-paragraphs",
+      "to": "templates/"
+    },
+    {
+      "from": "../govt_yukon_rms/templates/content/node--career-profile--teaser.html.twig",
+      "to": "templates/content/node--career-profile--teaser.html.twig"
+    },
+    {
+      "from": "../govt_yukon_rms/templates/content/node--community-profile--teaser.html.twig",
+      "to": "templates/content/node--community-profile--teaser.html.twig"
     }
   ]
 }

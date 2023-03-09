@@ -1,0 +1,15 @@
+uuid: 080dcfea-6b71-4e8f-99e6-18bc5fb5d8f2
+langcode: en
+status: true
+dependencies: {  }
+name: carousel_banner
+label: 'Carousel Banner (1920×600)'
+effects:
+  5efa38cf-7fbf-497c-84c5-0368452718ab:
+    uuid: 5efa38cf-7fbf-497c-84c5-0368452718ab
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1920
+      height: 600
+      anchor: center-center

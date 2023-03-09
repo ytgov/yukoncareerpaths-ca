@@ -1,0 +1,37 @@
+uuid: 9c126043-783e-47ea-b8e3-a82a87a594d8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.quick_facts_item.field_body
+    - field.field.paragraph.quick_facts_item.field_link
+    - paragraphs.paragraphs_type.quick_facts_item
+  module:
+    - link
+    - text
+id: paragraph.quick_facts_item.default
+targetEntityType: paragraph
+bundle: quick_facts_item
+mode: default
+content:
+  field_body:
+    type: text_textarea_with_summary
+    weight: 0
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  field_link:
+    type: link_default
+    weight: 1
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

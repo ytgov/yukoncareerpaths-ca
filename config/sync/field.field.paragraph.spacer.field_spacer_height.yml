@@ -1,0 +1,25 @@
+uuid: e5b9bd11-cd20-42c0-aa80-793dba90f487
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_spacer_height
+    - paragraphs.paragraphs_type.spacer
+id: paragraph.spacer.field_spacer_height
+field_name: field_spacer_height
+entity_type: paragraph
+bundle: spacer
+label: 'Spacer Height'
+description: 'The height value in pixels.'
+required: true
+translatable: true
+default_value:
+  -
+    value: 40
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: px
+field_type: integer

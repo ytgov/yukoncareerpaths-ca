@@ -1,0 +1,15 @@
+uuid: f575ba38-4cdd-48c0-bc87-7adafbb9f26d
+langcode: en
+status: true
+dependencies: {  }
+name: content_list
+label: 'Content List (952x630)'
+effects:
+  6dd19e0a-93fc-4702-9390-bc8e257a40a2:
+    uuid: 6dd19e0a-93fc-4702-9390-bc8e257a40a2
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 952
+      height: 630
+      anchor: center-center

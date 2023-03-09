@@ -1,0 +1,23 @@
+uuid: e49874e7-9057-468a-bc1c-62f6730fa2e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_share_this_page
+    - node.type.career_profile
+id: node.career_profile.field_share_this_page
+field_name: field_share_this_page
+entity_type: node
+bundle: career_profile
+label: 'Share This Page'
+description: 'Display the Share This Page dropdown. Will be displayed to the right of the page title. If the page title is not present on the page, this will be displayed at the bottom of the page aligned to the right.'
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

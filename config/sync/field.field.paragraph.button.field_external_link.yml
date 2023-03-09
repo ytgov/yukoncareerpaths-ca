@@ -1,0 +1,23 @@
+uuid: 44c269e3-695c-4c31-aa75-e10fc29b6144
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_external_link
+    - paragraphs.paragraphs_type.button
+id: paragraph.button.field_external_link
+field_name: field_external_link
+entity_type: paragraph
+bundle: button
+label: 'External link'
+description: 'Check if this link is an external link (linking off the website). An external icon will be displayed after the button text.'
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

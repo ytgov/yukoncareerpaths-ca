@@ -1,0 +1,18 @@
+uuid: ffbc3471-17e0-4bb4-81d8-8ecd2bc1fc44
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_display_all_community_prof
+field_name: field_display_all_community_prof
+entity_type: paragraph
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

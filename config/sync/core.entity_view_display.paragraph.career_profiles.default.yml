@@ -1,0 +1,26 @@
+uuid: eae27c47-5f2e-4ecf-b752-658e506a80dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.career_profiles.field_career_profiles
+    - field.field.paragraph.career_profiles.field_display_all_career_profile
+    - field.field.paragraph.career_profiles.field_link
+    - paragraphs.paragraphs_type.career_profiles
+id: paragraph.career_profiles.default
+targetEntityType: paragraph
+bundle: career_profiles
+mode: default
+content:
+  field_career_profiles:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_display_all_career_profile: true
+  field_link: true

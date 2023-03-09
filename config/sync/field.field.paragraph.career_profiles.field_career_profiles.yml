@@ -1,0 +1,29 @@
+uuid: f949cbf0-846d-4856-bdd5-821989fd768e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_career_profiles
+    - node.type.career_profile
+    - paragraphs.paragraphs_type.career_profiles
+id: paragraph.career_profiles.field_career_profiles
+field_name: field_career_profiles
+entity_type: paragraph
+bundle: career_profiles
+label: 'Career Profiles'
+description: 'Choose the career profiles you want displayed.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      career_profile: career_profile
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

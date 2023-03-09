@@ -1,0 +1,15 @@
+uuid: 00b424b2-bf2c-4f1c-932b-e40e04793b8c
+langcode: en
+status: true
+dependencies:
+  module:
+    - layout_paragraphs
+id: webform
+label: Webform
+icon_uuid: null
+icon_default: null
+description: 'Component: Display a Drupal Webform.'
+behavior_plugins:
+  layout_paragraphs:
+    enabled: false
+    available_layouts: {  }

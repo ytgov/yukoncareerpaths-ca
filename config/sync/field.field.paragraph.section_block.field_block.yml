@@ -1,0 +1,29 @@
+uuid: 64250b1c-77a9-43e4-98e5-a5d9d2ec3b33
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.section_block
+    - field.storage.paragraph.field_block
+    - paragraphs.paragraphs_type.section_block
+id: paragraph.section_block.field_block
+field_name: field_block
+entity_type: paragraph
+bundle: section_block
+label: 'Section Block'
+description: 'Select a Drupal "Section Block". <a href="/block/add/section_block?destination=/admin/structure/block/block-content" target="_blank">Click here</a> to create a new Section Block (opens in a new tab).'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:block_content'
+  handler_settings:
+    target_bundles:
+      section_block: section_block
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,55 @@
+uuid: 218e2afb-9a2a-4cb4-a108-245be9fe081e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.section.field_container_full_width
+    - field.field.paragraph.section.field_disable_gutters
+    - paragraphs.paragraphs_type.section
+  module:
+    - field_group
+third_party_settings:
+  field_group:
+    group_display_options:
+      children:
+        - field_container_full_width
+        - field_disable_gutters
+      label: 'Display Options'
+      region: content
+      parent_name: ''
+      weight: 1
+      format_type: details
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        open: false
+        description: ''
+        required_fields: true
+id: paragraph.section.default
+targetEntityType: paragraph
+bundle: section
+mode: default
+content:
+  field_container_full_width:
+    type: boolean_checkbox
+    weight: 3
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_disable_gutters:
+    type: boolean_checkbox
+    weight: 4
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  layout_paragraphs_fields:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

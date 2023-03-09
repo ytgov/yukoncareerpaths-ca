@@ -16,13 +16,13 @@ id: node.career_profile.body
 field_name: body
 entity_type: node
 bundle: career_profile
-label: Body
-description: ''
+label: 'Introduction Body'
+description: 'The content displayed as the introduction for this Career Profile. Will be displayed at the top of the page along with the title and Career Profile image.'
 required: false
 translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
-  display_summary: true
+  display_summary: false
   required_summary: false
 field_type: text_with_summary

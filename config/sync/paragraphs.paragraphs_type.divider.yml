@@ -1,0 +1,15 @@
+uuid: 652c9215-4970-41f6-96e2-989c4efbc2de
+langcode: en
+status: true
+dependencies:
+  module:
+    - layout_paragraphs
+id: divider
+label: Divider
+icon_uuid: null
+icon_default: null
+description: 'Component: A line break that is used to go between other components for visual separation.'
+behavior_plugins:
+  layout_paragraphs:
+    enabled: false
+    available_layouts: {  }

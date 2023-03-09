@@ -1,0 +1,18 @@
+uuid: 7da39bb1-d37f-4d71-a1dd-426a9bfe49c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.divider
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: paragraph.divider
+target_entity_type_id: paragraph
+target_bundle: divider
+default_langcode: site_default
+language_alterable: true
