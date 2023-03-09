@@ -1,0 +1,36 @@
+uuid: 01a0d910-2368-41b7-ab3c-4a739de6aedb
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:section_block:1ca0795d-2931-4b67-a3e1-2afb35c664c8'
+  module:
+    - block_content
+    - node
+  theme:
+    - govt_yukon_rms
+id: giveusyourfeedback
+theme: govt_yukon_rms
+region: above_footer
+weight: 0
+provider: null
+plugin: 'block_content:1ca0795d-2931-4b67-a3e1-2afb35c664c8'
+settings:
+  id: 'block_content:1ca0795d-2931-4b67-a3e1-2afb35c664c8'
+  label: 'Give us your feedback'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      career_profile: career_profile
+      community_profile: community_profile
+      landing_page: landing_page
+      page: page

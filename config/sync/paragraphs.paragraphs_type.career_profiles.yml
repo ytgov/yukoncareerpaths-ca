@@ -2,14 +2,11 @@ uuid: 4ea962d4-b417-4efa-bb78-99b506a37e9d
 langcode: en
 status: true
 dependencies:
-  module:
-    - layout_paragraphs
+  content:
+    - 'file:file:08a162e4-a668-43ab-8994-47d6231fbb7f'
 id: career_profiles
 label: 'Career Profiles'
-icon_uuid: null
-icon_default: null
+icon_uuid: 08a162e4-a668-43ab-8994-47d6231fbb7f
+icon_default: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0Ij48cGF0aCBkPSJNMCAwaDI0djI0SDBWMHoiIGZpbGw9Im5vbmUiLz48cGF0aCBkPSJNMTcgM0g3Yy0xLjEgMC0xLjk5LjktMS45OSAyTDUgMjFsNy0zIDcgM1Y1YzAtMS4xLS45LTItMi0yem0wIDE1bC01LTIuMThMNyAxOFY1aDEwdjEzeiIvPjwvc3ZnPg=='
 description: 'Component: Display a listing of Career Profiles.'
-behavior_plugins:
-  layout_paragraphs:
-    enabled: false
-    available_layouts: {  }
+behavior_plugins: {  }

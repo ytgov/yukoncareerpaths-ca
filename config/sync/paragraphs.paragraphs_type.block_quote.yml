@@ -2,14 +2,11 @@ uuid: 6aea2406-a626-4e32-86fb-52360b2990f3
 langcode: en
 status: true
 dependencies:
-  module:
-    - layout_paragraphs
+  content:
+    - 'file:file:10772134-7054-4823-b39f-2f6d7eccd0ea'
 id: block_quote
 label: 'Block Quote'
-icon_uuid: null
-icon_default: null
+icon_uuid: 10772134-7054-4823-b39f-2f6d7eccd0ea
+icon_default: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0NDggNTEyIj48IS0tISBGb250IEF3ZXNvbWUgUHJvIDYuMi4xIGJ5IEBmb250YXdlc29tZSAtIGh0dHBzOi8vZm9udGF3ZXNvbWUuY29tIExpY2Vuc2UgLSBodHRwczovL2ZvbnRhd2Vzb21lLmNvbS9saWNlbnNlIChDb21tZXJjaWFsIExpY2Vuc2UpIENvcHlyaWdodCAyMDIyIEZvbnRpY29ucywgSW5jLiAtLT48cGF0aCBkPSJNMCAyMTZDMCAxNDkuNyA1My43IDk2IDEyMCA5Nmg4IDMydjY0SDEyOGgtOGMtMzAuOSAwLTU2IDI1LjEtNTYgNTZ2OEgxOTJWNDE2SDBWMzIwIDIyNHYtOHptMjU2IDBjMC02Ni4zIDUzLjctMTIwIDEyMC0xMjBoOCAzMnY2NEgzODRoLThjLTMwLjkgMC01NiAyNS4xLTU2IDU2djhINDQ4VjQxNkgyNTZWMzIwIDIyNHYtOHoiLz48L3N2Zz4='
 description: 'Component: Display a quote in a block format.'
-behavior_plugins:
-  layout_paragraphs:
-    enabled: false
-    available_layouts: {  }
+behavior_plugins: {  }

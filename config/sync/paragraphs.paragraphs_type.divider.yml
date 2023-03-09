@@ -2,14 +2,11 @@ uuid: 652c9215-4970-41f6-96e2-989c4efbc2de
 langcode: en
 status: true
 dependencies:
-  module:
-    - layout_paragraphs
+  content:
+    - 'file:file:d4bc18c5-f578-4ed5-9bf8-20cf2818ab3e'
 id: divider
 label: Divider
-icon_uuid: null
-icon_default: null
+icon_uuid: d4bc18c5-f578-4ed5-9bf8-20cf2818ab3e
+icon_default: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDI0IDI0IiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCI+PGc+PHJlY3QgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIiBoZWlnaHQ9IjI0IiB3aWR0aD0iMjQiLz48Zz48cmVjdCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGhlaWdodD0iMiIgd2lkdGg9IjE2IiB4PSI0IiB5PSIxMSIvPjwvZz48L2c+PC9zdmc+'
 description: 'Component: A line break that is used to go between other components for visual separation.'
-behavior_plugins:
-  layout_paragraphs:
-    enabled: false
-    available_layouts: {  }
+behavior_plugins: {  }

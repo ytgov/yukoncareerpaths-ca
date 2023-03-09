@@ -2,14 +2,11 @@ uuid: acffe15b-7fe7-4f7a-b4a1-438e13cad7bd
 langcode: en
 status: true
 dependencies:
-  module:
-    - layout_paragraphs
+  content:
+    - 'file:file:32e7f462-18b2-46d8-ad8a-d342aa6bc252'
 id: quick_facts_item
 label: 'Quick Facts Item'
-icon_uuid: null
-icon_default: null
+icon_uuid: 32e7f462-18b2-46d8-ad8a-d342aa6bc252
+icon_default: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NDAgNTEyIj48IS0tISBGb250IEF3ZXNvbWUgUHJvIDYuMi4xIGJ5IEBmb250YXdlc29tZSAtIGh0dHBzOi8vZm9udGF3ZXNvbWUuY29tIExpY2Vuc2UgLSBodHRwczovL2ZvbnRhd2Vzb21lLmNvbS9saWNlbnNlIChDb21tZXJjaWFsIExpY2Vuc2UpIENvcHlyaWdodCAyMDIyIEZvbnRpY29ucywgSW5jLiAtLT48cGF0aCBkPSJNNTc2IDY0QzYxMS4zIDY0IDY0MCA5Mi42NSA2NDAgMTI4VjM4NEM2NDAgNDE5LjMgNjExLjMgNDQ4IDU3NiA0NDhINjRDMjguNjUgNDQ4IDAgNDE5LjMgMCAzODRWMTI4QzAgOTIuNjUgMjguNjUgNjQgNjQgNjRINTc2ek01NzYgMTEySDY0QzU1LjE2IDExMiA0OCAxMTkuMiA0OCAxMjhWMzg0QzQ4IDM5Mi44IDU1LjE2IDQwMCA2NCA0MDBINTc2QzU4NC44IDQwMCA1OTIgMzkyLjggNTkyIDM4NFYxMjhDNTkyIDExOS4yIDU4NC44IDExMiA1NzYgMTEyeiIvPjwvc3ZnPg=='
 description: 'Sub-Component: An item that appears within a Quick Facts component.'
-behavior_plugins:
-  layout_paragraphs:
-    enabled: false
-    available_layouts: {  }
+behavior_plugins: {  }

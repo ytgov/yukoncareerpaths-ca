@@ -47,6 +47,11 @@ content:
     settings:
       default_colors: '#244c5a,#0097a9,#512a44,#7a9a01,#dc4405,#000000'
     third_party_settings: {  }
+  translation:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   created: true
   status: true

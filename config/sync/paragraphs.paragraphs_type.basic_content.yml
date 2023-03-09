@@ -2,14 +2,11 @@ uuid: d1355cae-bcdf-4157-aa30-4626dbae892a
 langcode: en
 status: true
 dependencies:
-  module:
-    - layout_paragraphs
+  content:
+    - 'file:file:8ac50c02-1e80-4a19-afe2-3119805dfc03'
 id: basic_content
 label: 'Basic Content'
-icon_uuid: null
-icon_default: null
+icon_uuid: 8ac50c02-1e80-4a19-afe2-3119805dfc03
+icon_default: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDI0IDI0IiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCI+PGc+PHJlY3QgZmlsbD0ibm9uZSIgaGVpZ2h0PSIyNCIgd2lkdGg9IjI0Ii8+PC9nPjxnPjxnPjxnPjxwYXRoIGQ9Ik0zLDIxbDMuNzUsMEwxNy44MSw5Ljk0bC0zLjc1LTMuNzVMMywxNy4yNUwzLDIxeiBNNSwxOC4wOGw5LjA2LTkuMDZsMC45MiwwLjkyTDUuOTIsMTlMNSwxOUw1LDE4LjA4eiIvPjwvZz48Zz48cGF0aCBkPSJNMTguMzcsMy4yOWMtMC4zOS0wLjM5LTEuMDItMC4zOS0xLjQxLDBsLTEuODMsMS44M2wzLjc1LDMuNzVsMS44My0xLjgzYzAuMzktMC4zOSwwLjM5LTEuMDIsMC0xLjQxTDE4LjM3LDMuMjl6Ii8+PC9nPjwvZz48L2c+PC9zdmc+'
 description: 'Component: Common HTML content like text and images.'
-behavior_plugins:
-  layout_paragraphs:
-    enabled: false
-    available_layouts: {  }
+behavior_plugins: {  }
