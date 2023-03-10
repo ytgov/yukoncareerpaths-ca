@@ -1,0 +1,34 @@
+uuid: 7225d97a-5851-4a3f-99e0-f3520912b67b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.rss_list.field_rss_url
+    - field.field.paragraph.rss_list.field_title
+    - paragraphs.paragraphs_type.rss_list
+  module:
+    - link
+id: paragraph.rss_list.default
+targetEntityType: paragraph
+bundle: rss_list
+mode: default
+content:
+  field_rss_url:
+    type: link_default
+    weight: 1
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

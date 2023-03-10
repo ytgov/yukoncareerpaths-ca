@@ -1,0 +1,21 @@
+uuid: b4e82cc1-3081-4a60-94a8-ad696af7bb3b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.rss_list
+id: paragraph.rss_list.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: rss_list
+label: Title
+description: 'The title that appears in the header of this component.'
+required: true
+translatable: true
+default_value:
+  -
+    value: 'Currently recruiting'
+default_value_callback: ''
+settings: {  }
+field_type: string
