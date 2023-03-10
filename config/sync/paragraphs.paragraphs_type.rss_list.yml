@@ -1,0 +1,10 @@
+uuid: d4d57a90-27c6-4298-881c-e6c2227f8b43
+langcode: en
+status: true
+dependencies: {  }
+id: rss_list
+label: 'RSS List'
+icon_uuid: null
+icon_default: null
+description: 'Component: Display a list of items from an RSS feed.'
+behavior_plugins: {  }

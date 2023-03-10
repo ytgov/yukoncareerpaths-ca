@@ -13,6 +13,7 @@ dependencies:
     - paragraphs.paragraphs_type.content_list
     - paragraphs.paragraphs_type.divider
     - paragraphs.paragraphs_type.quick_facts
+    - paragraphs.paragraphs_type.rss_list
     - paragraphs.paragraphs_type.section
     - paragraphs.paragraphs_type.spacer
     - paragraphs.paragraphs_type.tabs
@@ -45,6 +46,7 @@ settings:
       tabs: tabs
       webform: webform
       quick_facts: quick_facts
+      rss_list: rss_list
     negate: 0
     target_bundles_drag_drop:
       basic_content:
@@ -95,9 +97,15 @@ settings:
       quick_facts_item:
         weight: 37
         enabled: false
+      rss_list:
+        weight: 40
+        enabled: true
       section:
         weight: 30
         enabled: true
+      section_block:
+        weight: 42
+        enabled: false
       spacer:
         weight: 31
         enabled: true

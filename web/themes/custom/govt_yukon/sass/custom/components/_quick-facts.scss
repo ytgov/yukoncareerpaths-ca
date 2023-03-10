@@ -21,14 +21,23 @@
 
 .comp-quick-facts__content {
   padding: rem(0 24px);
+
+  .rss-url-titles-list {
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
 }
 
 .comp-quick-facts__items {
 
 }
 
+.comp-quick-facts__content .rss-url-titles-list > .rss-url-titles-list__item,
 .comp-quick-facts__item {
   position: relative;
+  display: block;
   margin: 0;
   padding: rem(21px 0);
   font-size: rem(19px);
@@ -60,33 +69,41 @@
   .field--type-link a {
     line-height: 1.4;
   }
+}
 
-  .field--type-link a {
-    position: relative;
-    display: block;
-    padding-right: rem(55px);
-    color: $c-zinc;
-    text-decoration: none;
+.comp-quick-facts__content .rss-url-titles-list > .rss-url-titles-list__item a,
+.comp-quick-facts__item .field--type-link a {
+  position: relative;
+  display: block;
+  padding-right: rem(55px);
+  color: $c-zinc;
+  line-height: 1.4;
+  text-decoration: none;
 
-    &:visited {
-      color: $c-link-visited;
-    }
+  &:visited {
+    color: $c-link-visited;
+  }
 
-    &:hover,
-    &:focus {
-      color: $c-link-hover;
-      text-decoration: underline;
-    }
+  &:hover,
+  &:focus {
+    color: $c-link-hover;
+    text-decoration: underline;
+  }
 
-    // Icon.
-    &::after {
-      @extend %fa-icon;
-      @extend .far;
-      position: absolute;
-      top: rem(2px);
-      right: 0;
-      content: fa-content($fa-var-external-link);
-      color: $c-neutral-30;
-    }
+  // Icon.
+  &::after {
+    @extend %fa-icon;
+    @extend .far;
+    position: absolute;
+    top: rem(2px);
+    right: 0;
+    content: fa-content($fa-var-external-link);
+    color: $c-neutral-30;
+    @include smooth-transition;
+  }
+
+  &:hover::after,
+  &:focus::after {
+    color: $c-link-hover;
   }
 }
