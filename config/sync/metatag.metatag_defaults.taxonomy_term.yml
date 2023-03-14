@@ -9,4 +9,5 @@ label: 'Taxonomy term'
 tags:
   canonical_url: '[term:url]'
   description: '[term:description]'
+  robots: 'noindex, nofollow, noarchive, nosnippet, noodp, noydir, noimageindex, notranslate'
   title: '[term:name] | [site:name]'
