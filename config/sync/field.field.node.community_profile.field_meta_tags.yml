@@ -1,0 +1,21 @@
+uuid: 91323b39-df07-4311-9dbc-cafa2023f78a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_meta_tags
+    - node.type.community_profile
+  module:
+    - metatag
+id: node.community_profile.field_meta_tags
+field_name: field_meta_tags
+entity_type: node
+bundle: community_profile
+label: 'Meta Tags'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

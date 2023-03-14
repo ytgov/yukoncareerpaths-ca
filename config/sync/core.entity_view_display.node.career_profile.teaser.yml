@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.career_profile.field_image
     - field.field.node.career_profile.field_job_types
     - field.field.node.career_profile.field_locations
+    - field.field.node.career_profile.field_meta_tags
     - field.field.node.career_profile.field_share_this_page
     - image.style.card_image
     - node.type.career_profile
@@ -38,6 +39,7 @@ hidden:
   field_departments: true
   field_job_types: true
   field_locations: true
+  field_meta_tags: true
   field_share_this_page: true
   langcode: true
   links: true

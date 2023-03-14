@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.page.field_components
     - field.field.node.page.field_disable_page_top_margin
     - field.field.node.page.field_hide_header_elements
+    - field.field.node.page.field_meta_tags
     - field.field.node.page.field_page_banner
     - field.field.node.page.field_share_this_page
     - node.type.page
@@ -23,6 +24,7 @@ hidden:
   field_components: true
   field_disable_page_top_margin: true
   field_hide_header_elements: true
+  field_meta_tags: true
   field_page_banner: true
   field_share_this_page: true
   langcode: true

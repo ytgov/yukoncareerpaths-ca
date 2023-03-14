@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.community_profile.field_components
     - field.field.node.community_profile.field_image
+    - field.field.node.community_profile.field_meta_tags
     - field.field.node.community_profile.field_page_banner
     - field.field.node.community_profile.field_share_this_page
     - image.style.card_image
@@ -31,6 +32,7 @@ content:
     region: content
 hidden:
   field_components: true
+  field_meta_tags: true
   field_page_banner: true
   field_share_this_page: true
   langcode: true
