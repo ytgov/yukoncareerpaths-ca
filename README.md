@@ -3,6 +3,10 @@
 ### INTRODUCTION
 ------------
 
+UAT URL: https://yukoncareerpaths.cms-uat.yukon.ca
+
+PROD URLs: https://yukoncareerpaths.ca, https://yukoncareerpaths.com, https://parcoursprofessionnelyukon.ca, https://parcoursprofessionnelyukon.com
+
 ### REQUIREMENTS
 ------------
 - Lagoon CLI installed and configured.
