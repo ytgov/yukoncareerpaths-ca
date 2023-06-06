@@ -1,0 +1,26 @@
+label: 'Profils de carrière'
+display:
+  default:
+    display_options:
+      title: 'Profils de carrière'
+      pager:
+        options:
+          tags:
+            next: 'Suivant ›'
+            previous: '‹ Précédent'
+          expose:
+            items_per_page_label: 'Éléments par page'
+            items_per_page_options_all_label: '- Tous -'
+            offset_label: Décalage
+          views_infinite_scroll:
+            button_text: 'Afficher plus'
+      exposed_form:
+        options:
+          submit_button: Appliquer
+          reset_button_label: Réinitialiser
+          exposed_sorts_label: 'Trier par'
+      empty:
+        area_text_custom:
+          content: '<p>Les profils de carrière n’ont pas encore été affichés. Revenez plus tard.</p>'
+  listing:
+    display_title: 'Profils de carrière'
