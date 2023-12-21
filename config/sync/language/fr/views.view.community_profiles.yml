@@ -1,0 +1,26 @@
+label: 'Community Profiles (fr)'
+display:
+  default:
+    display_options:
+      title: 'Community Profiles (fr)'
+      pager:
+        options:
+          tags:
+            next: 'Suivant ›'
+            previous: '‹ Précédent'
+          views_infinite_scroll:
+            button_text: 'Afficher plus'
+          expose:
+            items_per_page_label: 'Éléments par page'
+            items_per_page_options_all_label: '- Tous -'
+            offset_label: Décalage
+      exposed_form:
+        options:
+          submit_button: Appliquer
+          reset_button_label: Réinitialiser
+          exposed_sorts_label: 'Trier par'
+      empty:
+        area_text_custom:
+          content: '<p>Les portraits n’ont pas encore été affichés. Revenez plus tard.</p>'
+  listing:
+    display_title: 'Portraits des collectivités '

@@ -7,5 +7,11 @@ _core:
 id: front
 label: 'Front page'
 tags:
+  abstract: 'Learn about careers and in the Government of Yukon and available jobs today.'
   canonical_url: '[site:url]'
+  description: 'Learn about careers and in the Government of Yukon and available jobs today.'
+  geo_placename: Yukon
+  keywords: 'Find a job with Government of Yukon; view jobs; employment; job board; vacancies; look at current job postings.'
+  news_keywords: 'Find a job with Government of Yukon; view jobs; employment; job board; vacancies; look at current job postings.'
   shortlink: '[site:url]'
+  title: 'Careers in the Government of Yukon'
