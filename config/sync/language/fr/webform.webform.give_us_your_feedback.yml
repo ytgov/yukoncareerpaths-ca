@@ -1,0 +1,17 @@
+title: 'Faites-nous part de vos commentaires'
+elements: |
+  was_this_page_helpful:
+    '#title': 'Avez-vous trouvé cette page utile?'
+    '#options':
+      'Yes': Oui
+      'No': Non
+  how_did_this_page_help_you:
+    '#title': 'En quoi cette page vous a-t-elle été utile?'
+    '#multiple__no_items_message': "<p>Vous n’avez pas entré d'information. Veuillez compléter le champ ci-desssous.</p>"
+  how_can_we_improve_this_page:
+    '#title': 'Comment peut-on améliorer cette page?'
+    '#multiple__no_items_message': "<p>Vous n’avez pas entré d'information. Veuillez compléter le champ ci-desssous.</p>"
+  actions:
+    '#submit__label': Soumettre
+settings:
+  confirmation_message: '<p>Merci de nous avoir fait part de vos commentaires.</p>'

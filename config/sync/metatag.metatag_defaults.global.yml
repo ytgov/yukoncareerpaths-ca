@@ -7,5 +7,12 @@ _core:
 id: global
 label: Global
 tags:
+  abstract: 'Learn about living and working in the Yukon and jobs available within the public service for the Government of Yukon.'
   canonical_url: '[current-page:url]'
+  description: 'Learn about living and working in the Yukon and jobs available within the public service for the Government of Yukon.'
+  geo_placename: Yukon
+  geo_region: CA
+  keywords: 'jobs, Yukon, employment, nurses, teachers, mechanic, career'
+  news_keywords: 'Yukon, jobs, government, career, employment'
+  robots: 'index, follow'
   title: '[current-page:title] | [site:name]'
