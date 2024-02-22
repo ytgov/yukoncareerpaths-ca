@@ -130,7 +130,7 @@
                 "Dialog drupalAutoButtons option should be respected on initial load": "https://www.drupal.org/files/issues/2022-12-16/2793343_75_0.patch"
             },
             "drupal/entity_reference_revisions": {
-                "Non-translatable fields can only be changed when updating the current revision": "https://www.drupal.org/files/issues/2020-06-09/3150084_2.patch"
+                "Non-translatable fields can only be changed when updating the current revision": "https://www.drupal.org/files/issues/2024-01-15/3150084-35.patch"
             }
         }
     },
