@@ -1,0 +1,6 @@
+name: yukoncareerpaths-ca
+recipe: drupal10
+config:
+  webroot: web
+  php: '8.2'
+  xdebug: true

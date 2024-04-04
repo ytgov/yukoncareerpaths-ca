@@ -1,5 +1,7 @@
 # Yukon Government - PSC Recruitment Marketing - Drupal CMS
 
+Find a career in the Yukon.
+
 ## Deployments
 
 UAT: https://yukoncareerpaths.cms-uat.yukon.ca
@@ -14,5 +16,5 @@ https://parcoursprofessionnelyukon.ca, https://parcoursprofessionnelyukon.com
 
 ## Installation
 
-Start the project
-- `lando start`
+1. `lando start`
+2. `lando composer install`
