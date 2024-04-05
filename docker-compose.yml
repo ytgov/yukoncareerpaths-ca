@@ -49,8 +49,7 @@ services:
       lagoon.type: nginx-php-persistent
       lagoon.persistent: /app/web/sites/default/files/
       lando.type: nginx-drupal
-    <<: *default-volumes
-    <<: *default-user
+    <<: [*default-volumes, *default-user]
     depends_on:
       - cli
     environment:
@@ -71,8 +70,7 @@ services:
       lagoon.name: nginx
       lagoon.persistent: /app/web/sites/default/files/
       lando.type: php-fpm
-    <<: *default-volumes
-    <<: *default-user
+    <<: [*default-volumes, *default-user]
     depends_on:
       - cli
     environment:
