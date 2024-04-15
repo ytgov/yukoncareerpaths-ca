@@ -7,7 +7,7 @@ x-volumes:
     - files:/app/web/sites/default/files
 
 x-environment: &default-environment
-  LAGOON_ROUTE: &default-url http://${COMPOSE_PROJECT_NAME:-yukon-recruitment-marketing-drupal}.lagoon-prd.acromedia.com
+  LAGOON_ROUTE: &default-url http://${COMPOSE_PROJECT_NAME:-yukon-recruitment-marketing-drupal}.docker.amazee.io
   # Uncomment if you like to have the system behave like in production
   #LAGOON_ENVIRONMENT_TYPE: production
   # Uncomment to enable xdebug and then restart via `docker-compose up -d`

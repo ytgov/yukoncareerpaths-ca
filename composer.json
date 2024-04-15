@@ -1,6 +1,6 @@
 {
-    "name": "drupal/recommended-project",
-    "description": "Project template for Drupal 9 projects with a relocated document root",
+    "name": "ytgov/yukoncareerpaths-ca",
+    "description": "The Career Path website for Yukon Gov",
     "type": "project",
     "license": "GPL-2.0-or-later",
     "homepage": "https://www.drupal.org/project/drupal",
@@ -15,6 +15,7 @@
         }
     },
     "require": {
+        "amazeeio/drupal_integrations": "0.4.0",
         "ext-simplexml": "*",
         "composer/installers": "^2.0",
         "cweagans/composer-patches": "^1.7",
@@ -48,7 +49,8 @@
         "drupal/views_bulk_operations": "^4.2",
         "drupal/views_infinite_scroll": "^2.0",
         "drupal/webform": "^6.2@beta",
-        "drush/drush": "^12.4"
+        "drush/drush": "^12.4",
+	"zaporylie/composer-drupal-optimizations": "1.2.0"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -63,7 +65,8 @@
             "dealerdirect/phpcodesniffer-composer-installer": true,
             "phpstan/extension-installer": true,
             "cweagans/composer-patches": true,
-            "php-http/discovery": true
+            "php-http/discovery": true,
+	    "zaporylie/composer-drupal-optimizations": true
         },
         "sort-packages": true
     },
@@ -72,8 +75,11 @@
             "locations": {
                 "web-root": "web/"
             },
+            "file-mapping": {
+                "[web-root]/sites/default/all.settings.php": "assets/all.settings.php"
+            },
             "allowed-packages": [
-                "acromedia/acro_lagoon_drush"
+                "amazeeio/drupal_integrations"
             ]
         },
         "installer-paths": {
