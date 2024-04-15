@@ -46,3 +46,6 @@ web/sites/default/development.services.local.yml
 
 # Ignore sql file
 *.sql
+
+# Ignore lagoonize files
+lagoonize_tmp/*

@@ -1,12 +1,12 @@
 '*':
-  host: ssh.lagoon-prd.acromedia.com
+  host: ssh.lagoon.amazeeio.cloud
   options:
     backup-dir: /tmp
     command-specific:
       sql-sync:
         no-ordered-dump: true
   root: /app/web
-  user: government-of-yukon-recruitment-marketing-drupal-${env-name}
+  user: yukon-recruitment-marketing-drupal-${env-name}
   paths:
     files: /app/web/sites/default/files
   ssh:

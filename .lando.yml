@@ -1,4 +1,4 @@
-name: government-of-yukon-recruitment-marketing-drupal
+name: yukon-recruitment-marketing-drupal
 recipe: lagoon
 config:
   flavor: drupal
@@ -11,10 +11,10 @@ services:
       command: /opt/bin/entry_point.sh
     overrides:
       environment:
-        DRUPAL_TEST_BASE_URL: http://government-of-yukon-recruitment-marketing-drupal.lndo.site
+        DRUPAL_TEST_BASE_URL: http://yukon-recruitment-marketing-drupal.lndo.site
         DRUPAL_TEST_DB_URL: mysql://drupal:drupal@database/drupal
-        PHP_IDE_CONFIG: "serverName=government-of-yukon-recruitment-marketing-drupal.lndo.site"
-        SIMPLETEST_BASE_URL: "http://government-of-yukon-recruitment-marketing-drupal.lndo.site"
+        PHP_IDE_CONFIG: "serverName=yukon-recruitment-marketing-drupal.lndo.site"
+        SIMPLETEST_BASE_URL: "http://yukon-recruitment-marketing-drupal.lndo.site"
         # For use with the selenium image provided.
         # Comment the 3 lines below out if using your local Chrome.
         DRUPAL_TEST_WEBDRIVER_HOSTNAME: selenium

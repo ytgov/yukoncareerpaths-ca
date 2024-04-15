@@ -7,7 +7,7 @@ x-volumes:
     - files:/app/web/sites/default/files
 
 x-environment: &default-environment
-  LAGOON_ROUTE: &default-url http://${COMPOSE_PROJECT_NAME:-government-of-yukon-recruitment-marketing-drupal}.lagoon-prd.acromedia.com
+  LAGOON_ROUTE: &default-url http://${COMPOSE_PROJECT_NAME:-yukon-recruitment-marketing-drupal}.lagoon-prd.acromedia.com
   # Uncomment if you like to have the system behave like in production
   #LAGOON_ENVIRONMENT_TYPE: production
   # Uncomment to enable xdebug and then restart via `docker-compose up -d`
@@ -26,7 +26,7 @@ services:
     build:
       context: .
       dockerfile: lagoon/cli.dockerfile
-    image: &cli-image ${COMPOSE_PROJECT_NAME:-government-of-yukon-recruitment-marketing-drupal}-cli
+    image: &cli-image ${COMPOSE_PROJECT_NAME:-yukon-recruitment-marketing-drupal}-cli
     labels:
       lagoon.type: cli-persistent
       lagoon.persistent.name: nginx
