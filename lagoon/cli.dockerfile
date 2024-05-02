@@ -1,5 +1,6 @@
 FROM uselagoon/php-8.1-cli-drupal:latest
 
+COPY assets /app/assets
 COPY composer.* /app/
 RUN COMPOSER_MEMORY_LIMIT=-1 composer install --no-dev
 COPY . /app
