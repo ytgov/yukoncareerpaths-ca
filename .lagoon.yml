@@ -1,15 +1,7 @@
 docker-compose-yaml: docker-compose.yml
 project: yukon-recruitment-marketing-drupal
-environment_variables:
-  git_sha: true
 
 tasks:
-  pre-rollout:
-    - run:
-        name: drush sql-dump
-        command: |
-          mkdir -p /app/private/deploy-backup/ && drush sql-dump --ordered-dump --gzip --result-file=/app/private/deploy-backup/pre-deploy-dump.sql.gz || true
-        service: cli
   post-rollout:
     - run:
         name: Sync DB and Files from production if we are not on production
@@ -21,25 +13,25 @@ tasks:
           fi
         service: cli
         when: LAGOON_ENVIRONMENT_TYPE != "production"
-    - run:
-        name: drush cr
-        command: drush cr
-        service: cli
-    - run:
-        name: drush updb
-        command: drush updb -y
-        service: cli
-    - run:
-        name: drush cim
-        command: drush cim -y
-        service: cli
-    - run:
-        name: drush cr
-        command: drush cr
-        service: cli
+          #    - run:
+          #        name: drush cr
+          #        command: drush cr
+          #        service: cli
+          #    - run:
+          #        name: drush updb
+          #        command: drush updb -y
+          #        service: cli
+          #    - run:
+          #        name: drush cim
+          #        command: drush cim -y
+          #        service: cli
+          #    - run:
+          #        name: drush cr
+          #        command: drush cr
+          #        service: cli
 
 environments:
-  master:
+  main:
     # routes:
     cronjobs:
       - name: drush cron
