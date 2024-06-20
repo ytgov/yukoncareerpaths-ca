@@ -13,4 +13,4 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag careerpathsbase:$(date +%s) --tag careerpathsbase:latest
+      run: docker build . --file lagoon/cli.dockerfile --tag careerpathsbase:$(date +%s) --tag careerpathsbase:latest
