@@ -3,6 +3,8 @@ name: Docker Image CI
 on:
   push:
     branches: [ "lagoonize" ]
+    tags:
+    - 'lagoonize-*'
   
 jobs:
 
@@ -17,9 +19,18 @@ jobs:
         username: bgaioyukon
         password: dckr_pat_fletdTlVXd0Ozf3hYmIyqREdY0E
 
+    - name: Extract metadata (tags, labels) for Docker
+      id: meta
+      uses: docker/metadata-action@v4
+      with:
+        images: bgaioyukon/careerpathsbase
+        tags: |
+          type=semver,pattern={{version}}
+
     - name: Build and push
       uses: docker/build-push-action@v5
       with:
         file: lagoon/cli.dockerfile
         push: true
-        tags: bgaioyukon/careerpathsbase:latest
+        tags: bgaioyukon/careerpathsbase:latest , ${{ steps.meta.outputs.tags }}
+        labels: ${{ steps.meta.outputs.labels }}
